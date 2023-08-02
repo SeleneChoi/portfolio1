@@ -1,0 +1,64 @@
+  .main-carousel, .carousel-cell {
+    width: 100%;
+  }
+  /* .main-carousel .carousel-cell .project_copy,
+  .main-carousel .carousel-cell .project_copy .tool_container{
+    margin: 0;
+    padding: 0;
+  } */
+
+
+
+  .flickity-viewport {
+  }
+  .carousel-cell {
+
+  }
+  /* .carousel-cell.is-selected {
+    background: var(--yellow);
+  }
+   */
+
+
+
+
+   .flickity-button {
+    background: var(--secondary-color);
+  }
+  .flickity-button:hover {
+    background: var(--primary-color);
+  }
+  
+  .flickity-prev-next-button {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+  }
+  /* icon color */
+  .flickity-button-icon {
+    fill: var(--yellow);
+  }
+  /* position outside */
+  .flickity-prev-next-button.previous {
+    left: -30px;
+  }
+  .flickity-prev-next-button.next {
+    right: -30px;
+  }
+  .flickity-button:focus {
+    background-color:var(--primary-color);
+  }
+
+
+  .flickity-page-dots {
+    bottom: -5rem;
+  }
+
+  /* dots are lines */
+  .flickity-page-dots .dot {
+    height: 0.6rem;
+    width: 3rem;
+    margin: 1rem;
+    border-radius: 0%;
+    background-color: var(--yellow);
+  }

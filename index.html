@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Front-end development Portfolio BCIT 2023, Selene Choi UI/UX design New Media">
+    <meta name="keywords" content="Selene Choi, Portfolio, Front-end web developer, BCIT 2023">
+    <meta name="image" content="https://selenechoi.ca/image/profile.png">
+    
+    <meta property="og:site_name" content="www.selenechoi.ca" />
+    <meta property="og:title" content="Selene Choi Portfolio BCIT 2023" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://selenechoi.ca/image/profile.png" />
+    <meta property="og:description" content="Front-end development Portfolio BCIT 2023, Selene Choi UI/UX design New Media" />
+    <meta name="description" content="Front-end development Portfolio BCIT 2023, Selene Choi UI/UX design New Media" />
+    <meta property="og:url" content="https://www.selenechoi.ca/" />
+
+    <title class="logo-title">Selene Choi Portfolio BCIT 2023</title>
+
+    <link rel="icon" href="image/cursor_daymode.png" type="image/x-icon">
+    <!-- FLICKITY CSS-->
+    <link rel="stylesheet" href="css/flickity/flickity.css" media="screen">
+    <link rel="stylesheet" href="css/flickity/flickity.min.css" media="screen">
+
+    <!-- GLOBAL CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/flickity.css">
+    <link rel="stylesheet" href="css/media.css">
+
+</head>
+<body onload="pageLoad()">
+
+    <div class="container">
+        
+        <div class="frame1 frame1_left"></div>
+        <div class="frame1 frame1_top"></div>
+        <div class="frame2 frame2_left"></div>
+        <div class="frame2 frame2_top"></div>
+
+        <div class="inner_container">
+            <header>
+                <div class="logo">
+                    <a href="index.html">
+                        <img id=logo src="image/logo_daymode.png" alt="logo_daymode">
+                    </a>
+                </div>
+                <div class="contact">
+                    <a href="#"><img class="icon" src="image/moon_day.png"/></a>
+                    <a href="https://www.linkedin.com/in/selene-choi-444227240/" target="_blank"><img id=linkedin src="image/linkedin_day.png"/></a>
+                    <a href="https://www.instagram.com/selene__choi/" target="_blank"><img id=insta src="image/insta_day.png"/></a>
+                    <a href="https://github.com/SeleneChoi" target="_blank"><img id=github src="image/github_day.png"/></a>
+                    <a href="mailto:selenechoi0214@gmail.com"><img id=mail src="image/mail_day.png"/></a>
+                </div>
+                <!-- HAMBURGER -->
+                <div class="header__menu-icon">
+                    <a href="#" class="js-menu-open">
+                        <ion-icon name="menu-outline"></ion-icon>
+                    </a>
+                </div>
+                <!-- HAMBURGER OPEN -->
+                <nav class="header__menu js-menu" data-open="0">
+                    <ul class="">
+                        <li class="header__close">
+                            <a href="#" class="js-menu-close">
+                                <ion-icon name="close-outline"></ion-icon>
+                            </a>
+                        </li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="project.html">Project</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+    
+
+
+            </header>
+            <main>
+                <div class="content">
+                    <h1>HELLO<strong class=yellow>,</strong></h1>
+                    <h2>I am Selene Choi<strong class=yellow>.</strong></h2>
+                    <h3>Developer<strong class=yellow> | </strong>Designer</h3>
+                    <p>I am  a front-end web developer specializing in UX/UI design based in Vancouver.</p>
+                    <p>I leverage my expertise in front-end development and understanding of user psychology to craft visually stunning and intuitive websites.</p>
+                    <button><a href="about.html">About me<strong class=yellow> >></strong></a></button>
+                </div>
+                <div class="nav">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="project.html">Project</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </main>
+            <footer>
+                <p>&#169;2023 SELENECHOI</p>
+            </footer>
+        </div>
+
+
+        <div class="frame1 frame1_right"></div>
+        <div class="frame1 frame1_bottom"></div>
+        <div class="frame2 frame2_right"></div>
+        <div class="frame2 frame2_bottom"></div>
+    </div>
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+    <!-- ICON FAMILY -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+    <script src="js/flickity/flickity.pkgd.js"></script>
+    <script src="js/flickity/flickity.pkgd.min.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
