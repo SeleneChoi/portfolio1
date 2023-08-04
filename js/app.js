@@ -50,6 +50,7 @@ function imageChange(){
     }
 }
 
+
 /* JS To Open & Close The Menu */
 const menu = document. querySelector(".js-menu");
 const menu_open = document.querySelector(".js-menu-open");
