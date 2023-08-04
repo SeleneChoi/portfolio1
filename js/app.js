@@ -22,6 +22,7 @@ function imageChange(){
         var mail = document.getElementById("mail");
         var linkedin2 = document.getElementById("linkedin2");
         var insta2 = document.getElementById("insta2");
+        var github2 = document.getElementById("github2");
         var mail2 = document.getElementById("mail2");
     
     if(document.body.classList.contains("dark-theme")){
@@ -33,6 +34,7 @@ function imageChange(){
         mail.src="image/mail_night.png"
         linkedin2.src="image/linkedin_night.png"
         insta2.src="image/insta_night.png"
+        github2.src="image/github_night.png"
         mail2.src="image/mail_night.png"
     }else {
         icon.src="image/moon_day.png",
@@ -43,6 +45,7 @@ function imageChange(){
         mail.src="image/mail_day.png"
         linkedin2.src="image/linkedin_day.png"
         insta2.src="image/insta_day.png"
+        github2.src="image/github_day.png"
         mail2.src="image/mail_day.png"
     }
 }

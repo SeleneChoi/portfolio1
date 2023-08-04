@@ -152,7 +152,7 @@ body:not(.dark-theme) {
   .contact_page_list {
     display: flex;
     flex-direction: row;
-    padding: 1.6rem;
+    padding: 1.2rem;
   }
   .contact_page img {
     width: 3rem;
