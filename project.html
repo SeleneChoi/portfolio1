@@ -3,168 +3,223 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Front-end development Portfolio BCIT 2023, Selene Choi UI/UX design New Media">
-    <meta name="keywords" content="Selene Choi, Portfolio, Front-end web developer, BCIT 2023">
-    <meta name="image" content="https://selenechoi.ca/image/profile.png">
-    
-    <meta property="og:site_name" content="www.selenechoi.ca" />
-    <meta property="og:title" content="Selene Choi Portfolio BCIT 2023" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://selenechoi.ca/image/profile.png" />
-    <meta property="og:description" content="Front-end development Portfolio BCIT 2023, Selene Choi UI/UX design New Media" />
-    <meta name="description" content="Front-end development Portfolio BCIT 2023, Selene Choi UI/UX design New Media" />
-    <meta property="og:url" content="https://www.selenechoi.ca/" />
-
-    <title class="logo-title">Selene Choi Portfolio BCIT 2023</title>
-    <link rel="icon" href="image/cursor_daymode.png" type="image/x-icon">
-    <!-- FLICKITY CSS-->
-    <link rel="stylesheet" href="css/flickity/flickity.css" media="screen">
-    <link rel="stylesheet" href="css/flickity/flickity.min.css" media="screen">
-
-    <!-- GLOBAL CSS -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/flickity.css">
-    <link rel="stylesheet" href="css/media.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="css\global.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
-<body onload="pageLoad()">
-
-    <div class="container">
-        
-        <div class="frame1 frame1_left"></div>
-        <div class="frame1 frame1_top"></div>
-        <div class="frame2 frame2_left"></div>
-        <div class="frame2 frame2_top"></div>
-
-        <div class="inner_container">
-            <header>
-                <div class="logo">
-                    <a href="index.html">
-                        <img id=logo src="image/logo_daymode.png" alt="logo_daymode">
-                    </a>
+<body class="bg-repeat bg-auto" style="background-image: url('img/bg.png')">
+    <header>
+        <div class="grid grid-cols-12 gap-4 drop-shadow-lg">
+            <a class="col-start-2 col-span-2 mt-12 pt-12 " href="index.html"><img class="drop-shadow-lg" src="img\logo.png" alt="logo"></a>
+            <div class="relative col-start-5 col-span-full">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="auto" viewBox="0 20 1048 434" fill="none">
+                    <g filter="url(#filter0_d_2_24)">
+                      <path d="M119.994 39.2465C204.418 35.9186 233.535 6.59838 237.54 -24.6631L1067.68 -50C1072.9 1.93438 1067.68 159.502 1067.68 294.128C903.113 455.604 515.472 424.595 460.617 336.861C364.215 182.678 259.482 322.491 92.8275 267.279C-73.827 212.067 14.4633 43.4062 119.994 39.2465Z" fill="#F0ADB2"/>
+                    </g>
+                    <defs>
+                      <filter id="filter0_d_2_24" x="0" y="-50" width="1090" height="484" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                        <feOffset dx="10" dy="15"/>
+                        <feGaussianBlur stdDeviation="5"/>
+                        <feComposite in2="hardAlpha" operator="out"/>
+                        <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 0.919444 0 0 0 0 0.758333 0 0 0 1 0"/>
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2_24"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2_24" result="shape"/>
+                      </filter>
+                    </defs>
+                </svg>
+                <div class="absolute right-40 top-20 grid grid-cols-6 gap-4">
+                    <!-- Socialmedia icon -->
+                    <a class="col-start-3 col-span-1 text-4xl m-2 flex justify-center items-center drop-shadow-lg" href=""><i class="fab fa-instagram "></i></a>
+                    <a class="col-span-1 text-4xl m-2 flex justify-center items-center drop-shadow-lg" href=""><i class="fab fa-linkedin"></i></a>
+                    <a class="col-span-1 text-4xl m-2 flex justify-center items-center drop-shadow-lg" href=""><i class="fas fa-envelope"></i></a>
+                    <!-- Toggle button -->
+                    <a class="col-span-1 text-5xl m-2 flex justify-center items-center drop-shadow-lg" href=""><i class="fas fa-toggle-on  col-span-2"></i></a>
+                    <!-- <i class="fas fa-toggle-off"></i> -->
+                    <a class="col-span-2 text-2xl flex justify-center drop-shadow-lg hover:underline decoration-wavy underline-offset-8 decoration-pink-400 hover:text-3xl" href="index.html"><h4>HOME</h4></a>
+                    <a class="col-span-2 text-2xl flex justify-center drop-shadow-lg hover:underline decoration-wavy underline-offset-8 decoration-pink-400 hover:text-3xl" href="about.html"><h4>ABOUT</h4></a>
+                    <a class="col-span-2 text-2xl flex justify-center drop-shadow-lg" href="project.html"><h4 class="text-3xl underline decoration-wavy underline-offset-8 decoration-orange-200 drop-shadow-lg">PROJECT</h4></a>
                 </div>
-                <div class="contact">
-                    <a href="#"><img class="icon" src="image/moon_day.png"/></a>
-                    <a href="https://www.linkedin.com/in/selene-choi-444227240/" target="_blank"><img id=linkedin src="image/linkedin_day.png"/></a>
-                    <a href="https://www.instagram.com/selene__choi/" target="_blank"><img id=insta src="image/insta_day.png"/></a>
-                    <a href="https://github.com/SeleneChoi" target="_blank"><img id=github src="image/github_day.png"/></a>
-                    <a href="mailto:selenechoi0214@gmail.com"><img id=mail src="image/mail_day.png"/></a>
-                </div>
-                <!-- HAMBURGER -->
-                <div class="header__menu-icon">
-                    <a href="#" class="js-menu-open">
-                        <ion-icon name="menu-outline"></ion-icon>
-                    </a>
-                </div>
-                <!-- HAMBURGER OPEN -->
-                <nav class="header__menu js-menu" data-open="0">
-                    <ul class="">
-                        <li class="header__close">
-                            <a href="#" class="js-menu-close">
-                                <ion-icon name="close-outline"></ion-icon>
-                            </a>
-                        </li>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="project.html">Project</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-
-            </header>
-            <main>
-                <div class="content">
-
-                    <div class="main-carousel">
-                        <div class="carousel-cell">
-                            <h3>Meeple 4 People Cafe</h3>
-                            <div class="project_copy">
-                                <div class="tool_container">
-                                    <div class="tool">HTML</div>
-                                    <div class="tool">CSS</div>
-                                    <div class="tool">JavaScript</div>
-                                </div>
-                                <p>Experience the ultimate boardgame cafe adventure at Meeple4People's website, featuring a hand-coded masterpiece crafted with HTML, CSS, and interactive JavaScript elements for an immersive and engaging browsing experience.</p>
-                                <button><a href="https://meeple4people.selenechoi.ca/" target="_blank">VIEW SITE<strong class=yellow> >></strong></a></button>    
-                            </div>        
+            </div>
+        </div>    
+    </header>
+    <main>
+        <div class="grid grid-cols-12 gap-4">
+        <!-- ROW 1 -->
+            <div class="relative col-start-1 col-span-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 503 287" fill="none">
+                        <g filter="url(#filter0_d_24_221)">
+                          <path d="M176.279 51.1041C102.72 -28.904 23.4436 17.7674 -7 51.1041V215.121C62.1151 294.629 192.94 273.127 210.836 215.121C230.583 265.126 395.966 261.125 409.542 185.118C529.876 174.617 491.616 14.6004 372.516 51.1042C341.044 -22.9035 197.26 -10.9022 176.279 51.1041Z" fill="#DAF4FF"/>
+                        </g>
+                        <defs>
+                          <filter id="filter0_d_24_221" x="-7" y="0" width="510" height="287" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                            <feOffset dx="10" dy="10"/>
+                            <feGaussianBlur stdDeviation="5"/>
+                            <feComposite in2="hardAlpha" operator="out"/>
+                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_24_221"/>
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_24_221" result="shape"/>
+                          </filter>
+                        </defs>
+                    </svg>
+                    <h1 class="absolute top-10 left-20 flex justify-center text-5xl leading-loose mt-10 drop-shadow-lg">Design & Development
+                    </h1>
+            </div>
+            <div class="col-span-full grid grid-cols-11 gap-x-8">
+                    <!-- STRING SVG -->
+                    <svg class="col-span-full mt-10 drop-shadow-md" xmlns="http://www.w3.org/2000/svg" viewBox="0 -5 1512 25" fill="none">
+                        <path d="M0 4.92285C43.5556 7.29924 223.689 20.6262 315.778 14.9229C430.889 7.79367 482.444 8.94976 575.778 14.9229C669.111 20.8959 712.444 22.2447 840 14.9229C942.667 9.02965 1006 -1.96853 1169.33 12.9133C1305.5 25.32 1417 20.9133 1512 9.92285" stroke="#FFEAC1" stroke-width="8" stroke-linecap="round"/>
+                    </svg>
+                    <div class="col-start-2 col-span-3 text-center mb-20 mx-8">
+                        <div class="w-10 h-16 bg-red-200 m-auto drop-shadow-lg"></div>
+                        <div class="bg-orange-100 py-8 px-3 rounded-xl drop-shadow-lg">
+                            <img class="flex justify-center m-auto p-3 bg-white rounded-xl w-11/12 drop-shadow-lg" src="img\m4p.png" alt="meeple4people">
+                            <h2 class="flex justify-center mt-8 text-2xl drop-shadow-lg">MEEPLE 4 PEOPLE</h2>                            
                         </div>
-
-                        <div class="carousel-cell">
-                            <h3>MyMori</h3>
-                            <div class="project_copy">
-                                <div class="tool_container">
-                                    <div class="tool">Figma</div>
-                                    <div class="tool">Prototype</div>
-                                    <div class="tool">UX/UI</div>
-                                    <div class="tool">AI</div>
-                                </div>
-                                <p>Our concept begins with a small seed. We believe humans can thrive with the same process. Continual encouragement and support not only can nurture a person but build together a whole community. This inspired the name of our app, MyMori; using the Japanese word “Mori” translating to, “forest”.</p>
-                                <button><a href="https://www.figma.com/proto/voJ09e9SrygsFZTgSkAC9M/My-Mori?page-id=0%3A1&type=design&node-id=78-1307&viewport=16%2C263%2C0.3&scaling=scale-down&starting-point-node-id=78%3A1307&mode=design" target="_blank">Prototype<strong class=yellow> >></strong></a></button>    
-                            </div>        
+                    </div>
+                    <div class="col-start-5 col-span-3 text-center mb-20 mx-8">
+                        <div class="w-10 h-16 bg-red-200 m-auto drop-shadow-lg"></div>
+                        <div class="bg-orange-100 py-8 px-3 rounded-xl drop-shadow-lg">
+                            <img class="flex justify-center m-auto p-3 bg-white rounded-xl w-11/12 drop-shadow-lg" src="img\blank.png" alt="wedding">
+                            <h2 class="flex justify-center mt-8 text-2xl drop-shadow-lg">VIVIAN's WEDDING</h2>                            
                         </div>
-
-                        <div class="carousel-cell">
-                            <h3>Yummy Bakery</h3>
-                            <div class="project_copy">
-                                <div class="tool_container">
-                                    <div class="tool">HTML</div>
-                                    <div class="tool">CSS</div>
-                                    <div class="tool">JavaScript</div>
-                                </div>
-                                <p>Yummy Bakery is a captivating website skillfully crafted with HTML, CSS, and JavaScript. Its well-structured HTML ensures a seamless flow of enticing content, from the hamburger menu to contact details. The responsive design adapts gracefully to all devices, while the clever grid system organizes the layout.</p>
-                                <button><a href="https://yummybakery.selenechoi.ca/" target="_blank">view site<strong class=yellow> >></strong></a></button>    
-                            </div>        
+                    </div>
+                    <div class="col-start-8 col-span-3 text-center mb-20 mx-8">
+                        <div class="w-10 h-16 bg-red-200 m-auto drop-shadow-lg"></div>
+                        <div class="bg-orange-100 py-8 px-3 rounded-xl drop-shadow-lg">
+                            <img class="flex justify-center m-auto p-3 bg-white rounded-xl w-11/12 h-5/6 drop-shadow-lg" src="img\mymori.png" alt="my mori">
+                            <h2 class="flex justify-center mt-8 text-2xl drop-shadow-lg">MY MORI</h2>                            
                         </div>
-
-                        <div class="carousel-cell">
-                            <h3>Zen Yoga</h3>
-                            <div class="project_copy">
-                                <div class="tool_container">
-                                    <div class="tool">HTML</div>
-                                    <div class="tool">CSS</div>
-                                    <div class="tool">JavaScript</div>
-                                </div>
-                                <p>Zen Yoga, a serene oasis crafted with HTML and CSS, showcases front-end development skills. The website seamlessly presents yoga classes, meditation sessions, and workshops, enveloping users in tranquility. CSS enhances aesthetics with calming colors, imagery, and typography, evoking a sense of serenity.</p>
-                                <button><a href="https://zenyoga.selenechoi.ca/home.html" target="_blank">VIEW SITE<strong class=yellow> >></strong></a></button>    
-                            </div>
-                        </div>
-
                     </div>
                 </div>
-                <!-- <div class="divider"></div> -->
-                <div class="nav">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="#">Project</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
+        <!-- ROW 2 -->
+            <div class="col-span-full grid grid-cols-11 gap-x-8">
+                <!-- STRING SVG -->
+                <svg class="col-span-full mt-10 drop-shadow-md" xmlns="http://www.w3.org/2000/svg" viewBox="0 -5 1512 25" fill="none">
+                        <path d="M0 4.92285C43.5556 7.29924 223.689 20.6262 315.778 14.9229C430.889 7.79367 482.444 8.94976 575.778 14.9229C669.111 20.8959 712.444 22.2447 840 14.9229C942.667 9.02965 1006 -1.96853 1169.33 12.9133C1305.5 25.32 1417 20.9133 1512 9.92285" stroke="#FFEAC1" stroke-width="8" stroke-linecap="round"/>
+                </svg>
+                <div class="col-start-2 col-span-3 text-center mb-20 mx-8">
+                    <div class="w-10 h-16 bg-red-200 m-auto drop-shadow-lg"></div>
+                    <div class="bg-orange-100 py-8 px-3 rounded-xl drop-shadow-lg">
+                        <img class="flex justify-center m-auto p-3 bg-white rounded-xl w-11/12 drop-shadow-lg" src="img\deardiary.png" alt="dear diary">
+                        <h2 class="flex justify-center mt-8 text-2xl drop-shadow-lg">DEAR DIARY</h2>                            
+                    </div>
                 </div>
-            </main>
-            <footer>
-                <p>&#169;2023 SELENECHOI</p>
-            </footer>
+                <div class="col-start-5 col-span-3 text-center mb-20 mx-8">
+                    <div class="w-10 h-16 bg-red-200 m-auto drop-shadow-lg"></div>
+                    <div class="bg-orange-100 py-8 px-3 rounded-xl drop-shadow-lg">
+                        <img class="flex justify-center m-auto p-3 bg-white rounded-xl w-11/12 drop-shadow-lg" src="img\businesscard.png" alt="business card">
+                        <h2 class="flex justify-center mt-8 text-2xl drop-shadow-lg">BUSINESS CARD</h2>                            
+                    </div>
+                </div>
+                <div class="col-start-8 col-span-3 text-center mb-20 mx-8">
+                    <div class="w-10 h-16 bg-red-200 m-auto drop-shadow-lg"></div>
+                    <div class="bg-orange-100 py-8 px-3 rounded-xl drop-shadow-lg">
+                        <img class="flex justify-center m-auto p-3 bg-white rounded-xl w-11/12 drop-shadow-lg" src="img\blank.png" alt="blank">
+                        <h2 class="flex justify-center mt-8 text-2xl drop-shadow-lg">Coming soon...</h2>                            
+                    </div>
+                </div>
+            </div>
+        <!-- ROW 3 -->
+            <div class="relative col-start-1 col-span-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 503 287" fill="none">
+                            <g filter="url(#filter0_d_24_221)">
+                            <path d="M176.279 51.1041C102.72 -28.904 23.4436 17.7674 -7 51.1041V215.121C62.1151 294.629 192.94 273.127 210.836 215.121C230.583 265.126 395.966 261.125 409.542 185.118C529.876 174.617 491.616 14.6004 372.516 51.1042C341.044 -22.9035 197.26 -10.9022 176.279 51.1041Z" fill="#DAF4FF"/>
+                            </g>
+                            <defs>
+                            <filter id="filter0_d_24_221" x="-7" y="0" width="510" height="287" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                <feOffset dx="10" dy="10"/>
+                                <feGaussianBlur stdDeviation="5"/>
+                                <feComposite in2="hardAlpha" operator="out"/>
+                                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_24_221"/>
+                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_24_221" result="shape"/>
+                            </filter>
+                            </defs>
+                    </svg>
+                    <h1 class="absolute top-10 left-20 flex justify-center text-5xl leading-loose mt-10 drop-shadow-lg">UXUI Design</h1>
+            </div>
+            <div class="col-span-full grid grid-cols-11 gap-x-8">
+                    <!-- STRING SVG -->
+                    <svg class="col-span-full mt-10 drop-shadow-md" xmlns="http://www.w3.org/2000/svg" viewBox="0 -5 1512 25" fill="none">
+                        <path d="M0 4.92285C43.5556 7.29924 223.689 20.6262 315.778 14.9229C430.889 7.79367 482.444 8.94976 575.778 14.9229C669.111 20.8959 712.444 22.2447 840 14.9229C942.667 9.02965 1006 -1.96853 1169.33 12.9133C1305.5 25.32 1417 20.9133 1512 9.92285" stroke="#FFEAC1" stroke-width="8" stroke-linecap="round"/>
+                    </svg>
+                    <div class="col-start-2 col-span-3 text-center mb-10 mx-8">
+                        <div class="w-10 h-16 bg-red-200 m-auto drop-shadow-lg"></div>
+                        <div class="bg-orange-100 py-8 px-3 rounded-xl drop-shadow-lg">
+                            <img class="flex justify-center m-auto p-3 bg-white rounded-xl w-11/12 h-5/6 drop-shadow-lg" src="img\mymori.png" alt="my mori">
+                            <h2 class="flex justify-center mt-8 text-2xl drop-shadow-lg">MY MORI</h2>                            
+                        </div>
+                    </div>
+                    <div class="col-start-5 col-span-3 text-center mb-10 mx-8">
+                        <div class="w-10 h-16 bg-red-200 m-auto drop-shadow-lg"></div>
+                        <div class="bg-orange-100 py-8 px-3 rounded-xl drop-shadow-lg">
+                            <img class="flex justify-center m-auto p-3 bg-white rounded-xl w-11/12 drop-shadow-lg" src="img\blank.png" alt="linkedin">
+                            <h2 class="flex justify-center mt-8 text-2xl drop-shadow-lg">LinkedIn REDESIGN</h2>                            
+                        </div>
+                    </div>
+                    <div class="col-start-8 col-span-3 text-center mb-10 mx-8">
+                        <div class="w-10 h-16 bg-red-200 m-auto drop-shadow-lg"></div>
+                        <div class="bg-orange-100 py-8 px-3 rounded-xl drop-shadow-lg">
+                            <img class="flex justify-center m-auto p-3 bg-white rounded-xl w-11/12 drop-shadow-lg" src="img\blank.png" alt="blank">
+                            <h2 class="flex justify-center mt-8 text-2xl drop-shadow-lg">Coming soon...</h2>                            
+                        </div>
+                    </div>
+            </div>
+            <a class="col-span-full text-2xl flex justify-center drop-shadow-lg mt-10" href="#top"><h4 class="text-3xl underline decoration-wavy underline-offset-8 decoration-orange-200 drop-shadow-lg hover:decoration-pink-400">GO TO TOP</h4></a>
         </div>
-
-
-        <div class="frame1 frame1_right"></div>
-        <div class="frame1 frame1_bottom"></div>
-        <div class="frame2 frame2_right"></div>
-        <div class="frame2 frame2_bottom"></div>
-    </div>
-
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script> -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <!-- ICON FAMILY -->
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-    <script src="js/flickity/flickity.pkgd.js"></script>
-    <script src="js/flickity/flickity.pkgd.min.js"></script>
-
-    <script src="js/app.js"></script>
-
+    </main>
+    <footer>
+        <div class="relative grid grid-cols-5">
+            <div class="col-start-3 col-span-1 absolute bottom-1/4 z-20 text-center flex flex-col gap-4 w-4/5">
+                <img class="drop-shadow-lg" src="img\logo.png" alt="logo">
+                <h4 class="text-2xl drop-shadow-lg">Created & Built by Selene 2023</h4>    
+            </div>
+            <!-- RIGHT -->
+            <svg class="col-span-full z-10"  xmlns="http://www.w3.org/2000/svg" viewBox="0 -50 1142 572" fill="none">
+                    <g filter="url(#filter0_d_24_76)">
+                    <path d="M641.5 222C469 60.9995 150.5 558 11 574.5C-128.5 591 1140.5 574.5 1140.5 574.5V22.4998C842.501 -14.0001 814 383 641.5 222Z" fill="#FFEAC1"/>
+                    </g>
+                    <defs>
+                    <filter id="filter0_d_24_76" x="0.287262" y="0.11499" width="1160.21" height="581.718" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                        <feOffset dx="10" dy="-10"/>
+                        <feGaussianBlur stdDeviation="5"/>
+                        <feComposite in2="hardAlpha" operator="out"/>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0.941667 0 0 0 0 0.678785 0 0 0 0 0.697834 0 0 0 1 0"/>
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_24_76"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_24_76" result="shape"/>
+                    </filter>
+                    </defs>
+            </svg>
+            <!-- LEFT -->
+            <svg class="col-span-full absolute bottom-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1209 453" fill="none">
+                    <g filter="url(#filter0_d_24_75)">
+                    <path d="M177 20.5C89.4 20.5 25.6667 95.1667 0.5 132.5V460.5H1188.5C1096.83 357.5 769.2 132.5 676 132.5C559.5 132.5 615 232 496 237C377 242 286.5 20.5 177 20.5Z" fill="#F0ADB2"/>
+                    </g>
+                    <defs>
+                    <filter id="filter0_d_24_75" x="0.5" y="0.5" width="1208" height="460" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                        <feOffset dx="10" dy="-10"/>
+                        <feGaussianBlur stdDeviation="5"/>
+                        <feComposite in2="hardAlpha" operator="out"/>
+                        <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 0.919444 0 0 0 0 0.758333 0 0 0 1 0"/>
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_24_75"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_24_75" result="shape"/>
+                    </filter>
+                    </defs>
+            </svg>
+        </div>
+    </footer>
 
 </body>
-
 </html>
