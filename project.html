@@ -40,7 +40,14 @@
                     <!-- <i class="fas fa-toggle-off"></i> -->
                     <a class="col-span-2 text-2xl flex justify-center drop-shadow-lg hover:underline decoration-wavy underline-offset-8 decoration-pink-400 hover:text-3xl" href="index.html"><h4>HOME</h4></a>
                     <a class="col-span-2 text-2xl flex justify-center drop-shadow-lg hover:underline decoration-wavy underline-offset-8 decoration-pink-400 hover:text-3xl" href="about.html"><h4>ABOUT</h4></a>
-                    <a class="col-span-2 text-2xl flex justify-center drop-shadow-lg" href="project.html"><h4 class="text-3xl underline decoration-wavy underline-offset-8 decoration-orange-200 drop-shadow-lg">PROJECT</h4></a>
+                    <div class="col-span-2 text-3xl flex flex-col justify-center drop-shadow-lg">
+                        <button id="dropdownHoverButton" class="underline decoration-wavy underline-offset-8 decoration-orange-200 hover:text-3xl pb-5">PROJECT</button>
+                        <div id="dropdownHover" class="hidden flex flex-col text-xl items-center">
+                            <a class="hover:underline decoration-wavy undeline-offset-6 decoration-orange-200 py-2" href="project.html#develop">Design&Develop</a>
+                            <a class="hover:underline decoration-wavy undeline-offset-6 decoration-orange-200" href="project.html#design">UXUI Design</a>
+                        </div>
+                    </div>                  
+
                 </div>
             </div>
         </div>    
@@ -219,6 +226,8 @@
             </svg>
         </div>
     </footer>
+
+    <script src="js/eventHandler.js"></script>
 
 </body>
 </html>
