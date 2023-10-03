@@ -41,34 +41,13 @@
                     <!-- <i class="fas fa-toggle-off"></i> -->
                     <a class="col-span-2 text-2xl flex justify-center drop-shadow-lg" href="index.html"><h4 class="text-3xl underline decoration-wavy underline-offset-8 decoration-orange-200 drop-shadow-lg">HOME</h4></a>
                     <a class="col-span-2 text-2xl flex justify-center drop-shadow-lg hover:underline decoration-wavy underline-offset-8 decoration-pink-400 hover:text-3xl" href="about.html"><h4>ABOUT</h4></a>
-                    <!-- <div class="dropdown col-span-2 text-2xl flex justify-center drop-shadow-lg hover:underline decoration-wavy underline-offset-8 decoration-pink-400 hover:text-3xl relative inline-block">
-                        <button class="dropbtn"><a href="project.html"><h4>PROJECT</h4></a></button>
-                        <div class="dropdown-content" >
-                            <a href="project.html#develop">Development</a>
-                            <a href="project.html#design">Design</a>        
+                    <div class="col-span-2 text-2xl flex flex-col justify-center drop-shadow-lg">
+                        <button id="dropdownHoverButton" class="hover:underline decoration-wavy underline-offset-8 decoration-pink-400 hover:text-3xl pb-5">PROJECT</button>
+                        <div id="dropdownHover" class="hidden flex flex-col text-xl items-center">
+                            <a class="hover:underline decoration-wavy undeline-offset-6 decoration-orange-200 py-2" href="project.html#develop">Design&Develop</a>
+                            <a class="hover:underline decoration-wavy undeline-offset-6 decoration-orange-200" href="project.html#design">UXUI Design</a>
                         </div>
-                    </div> -->
-                    <div class="col-span-2 text-2xl flex justify-center drop-shadow-lg relative inline-block">
-                        <button id="dropdownHoverButton">PROJECT</button>
-                        <div id="dropdownHover" class="z-10 hidden">
-                            <a href="project.html#develop">Development</a>
-                            <a href="project.html#design">Design</a>
-                        </div>
-                    </div>
-                    
-                    <script>
-                        const button = document.getElementById('dropdownHoverButton');
-                        const dropdown = document.getElementById('dropdownHover');
-                    
-                        button.addEventListener('mouseenter', () => {
-                            dropdown.classList.remove('hidden');
-                        });
-                    
-                        button.addEventListener('mouseleave', () => {
-                            dropdown.classList.add('hidden');
-                        });
-                    </script>
-                    
+                    </div>                  
                 </div>
             </div>
         </div>    
@@ -202,6 +181,8 @@
             </svg>
         </div>
     </footer>
+
+<script src="js/eventHandler.js"></script>
 
 </body>
 </html>
