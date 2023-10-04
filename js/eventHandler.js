@@ -1,4 +1,5 @@
-                    
+
+// DROPDOWN MENU - PROJECT
 const button = document.getElementById('dropdownHoverButton');
 const dropdown = document.getElementById('dropdownHover');
                 
