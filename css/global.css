@@ -16,7 +16,7 @@ h1 {
     font-family: 'Londrina Shadow', cursive;
 }
 
-/* swing animation */
+/*  Left,Right */
 .swing1 {
 	transform-origin: top center;
 	animation: swing1 8s ease infinite;
@@ -28,7 +28,7 @@ h1 {
 	70% { transform: rotate(-3deg); }	
 	100% { transform: rotate(1deg); }
 }
-
+/* Middle */
 .swing2 {
 	transform-origin: top center;
 	animation: swing2 8s ease infinite;
@@ -40,7 +40,7 @@ h1 {
 	80% { transform: rotate(3deg); }	
 	100% { transform: rotate(0deg); }
 }
-
+/* Large graphic */
 .fade-in-down-l {
 	transform-origin: top center;
 	animation: fade-in-down-l 0.8s ease 1;
@@ -55,6 +55,7 @@ h1 {
       transform: translateY(0);
     }
 }
+/* Small object,Text */
 .fade-in-down-s {
 	transform-origin: top center;
 	animation: fade-in-down-s 2s ease 1;
@@ -70,16 +71,7 @@ h1 {
     }
 }
 
-.gelatine {
-    animation: gelatine 0.5s infinite;
-  }
-  @keyframes gelatine {
-    from, to { transform: scale(1, 1); }
-    25% { transform: scale(0.9, 1.1); }
-    50% { transform: scale(1.1, 0.9); }
-    75% { transform: scale(0.95, 1.05); }
-  }
-
+/* Cloud, home_introduction bg */
   .wobble {
     animation: wobble1 30s ease infinite;
   }
@@ -92,7 +84,7 @@ h1 {
     75% { transform: translateX(-8%) rotate(-1deg); }
     100% { transform: translateX(0%); }
   }
-
+/* NAV BG */
   .wobble2 {
     animation: wobble2 40s ease infinite;
   }
@@ -101,5 +93,22 @@ h1 {
     25% { transform: translateX(25%) translateY(-5%) rotate(0deg); }
     50% { transform: translateX(15%) translateY(0%) rotate(0deg); }
     75% { transform: translateX(8%) translateY(-5%) rotate(1deg); }
+    100% { transform: translateX(0%); }
+  }
+  /* Footer animation */
+  .wobble_left {
+    animation: wobble_left 20s ease infinite;
+  }
+  @keyframes wobble_left {
+    0% { transform: translateX(0%); }
+    35% { transform: translateX(-25%); }
+    100% { transform: translateX(0%); }
+  }
+  .wobble_right {
+    animation: wobble_right 20s ease infinite;
+  }
+  @keyframes wobble_right {
+    0% { transform: translateX(0%); }
+    35% { transform: translateX(25%); }
     100% { transform: translateX(0%); }
   }
