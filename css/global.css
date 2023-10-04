@@ -79,3 +79,27 @@ h1 {
     50% { transform: scale(1.1, 0.9); }
     75% { transform: scale(0.95, 1.05); }
   }
+
+  .wobble {
+    animation: wobble1 30s ease infinite;
+  }
+  @keyframes wobble1 {
+    0% { transform: translateX(0%); }
+    15% { transform: translateX(-25%) rotate(-5deg); }
+    30% { transform: translateX(-5%) rotate(3deg); }
+    45% { transform: translateX(-15%) rotate(-3deg); }
+    60% { transform: translateX(-2%) rotate(2deg); }
+    75% { transform: translateX(-8%) rotate(-1deg); }
+    100% { transform: translateX(0%); }
+  }
+
+  .wobble2 {
+    animation: wobble2 40s ease infinite;
+  }
+  @keyframes wobble2 {
+    0% { transform: translateX(0%); }
+    25% { transform: translateX(25%) translateY(-5%) rotate(0deg); }
+    50% { transform: translateX(15%) translateY(0%) rotate(0deg); }
+    75% { transform: translateX(8%) translateY(-5%) rotate(1deg); }
+    100% { transform: translateX(0%); }
+  }
