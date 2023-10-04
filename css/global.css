@@ -4,9 +4,7 @@ font-family: 'Londrina Shadow', cursive;
 font-family: 'Nova Round', cursive; */
 
 body{
-    /* background-color: red; */
-    /* background-image: url('img\bg.png');
-    background-repeat: repeat-y; */
+    background-repeat: repeat-y;
     font-family: 'Nova Round', cursive;
 }
 
@@ -17,3 +15,67 @@ h1 {
 .line {
     font-family: 'Londrina Shadow', cursive;
 }
+
+/* swing animation */
+.swing1 {
+	transform-origin: top center;
+	animation: swing1 8s ease infinite;
+}
+@keyframes swing1 {
+	10% { transform: rotate(5deg); }
+	30% { transform: rotate(-5deg); }
+	60% { transform: rotate(3deg); }	
+	70% { transform: rotate(-3deg); }	
+	100% { transform: rotate(1deg); }
+}
+
+.swing2 {
+	transform-origin: top center;
+	animation: swing2 8s ease infinite;
+}
+@keyframes swing2 {
+	20% { transform: rotate(-5deg); }	
+	40% { transform: rotate(5deg); }
+	70% { transform: rotate(-4deg); }	
+	80% { transform: rotate(3deg); }	
+	100% { transform: rotate(0deg); }
+}
+
+.fade-in-down-l {
+	transform-origin: top center;
+	animation: fade-in-down-l 0.8s ease 1;
+}
+@keyframes fade-in-down-l {
+    0% {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+.fade-in-down-s {
+	transform-origin: top center;
+	animation: fade-in-down-s 2s ease 1;
+}
+@keyframes fade-in-down-s {
+    0% {
+      opacity: 0;
+      transform: translateY(-30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+
+.gelatine {
+    animation: gelatine 0.5s infinite;
+  }
+  @keyframes gelatine {
+    from, to { transform: scale(1, 1); }
+    25% { transform: scale(0.9, 1.1); }
+    50% { transform: scale(1.1, 0.9); }
+    75% { transform: scale(0.95, 1.05); }
+  }
