@@ -15,7 +15,7 @@ dropdown.addEventListener('mouseenter', () => {
     dropdown.classList.remove('hidden');
 
     if(window.location.pathname !== '/project.html'){
-    button.classList.add('underline','text-3xl');
+    button.classList.add('underline','md:text-3xl');
     }
 });
 
@@ -23,6 +23,6 @@ dropdown.addEventListener('mouseleave', () => {
     dropdown.classList.add('hidden');
 
     if(window.location.pathname !== '/project.html'){
-    button.classList.remove('underline','text-3xl');
+    button.classList.remove('underline','md:text-3xl');
     }
 });
