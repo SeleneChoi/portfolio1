@@ -44,6 +44,20 @@ h1 {
 	80% { transform: rotate(3deg); }	
 	100% { transform: rotate(0deg); }
 }
+.swing_pen {
+	transform-origin: bottom right;
+	animation: wobble2 1s ease infinite;
+}
+.swing_hand {
+	transform-origin: bottom right;
+	animation: swing_hand 1.5s infinite;
+}
+@keyframes swing_hand {
+	10% { transform: rotatez(-25deg); }	
+	30% { transform: rotatez(25deg); }
+	60% { transform: rotatez(-20deg); }	
+	100% { transform: rotatez(25deg); }	
+}
 /* Large graphic */
 .fade-in-down-l {
 	transform-origin: top center;
