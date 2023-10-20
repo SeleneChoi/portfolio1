@@ -7,6 +7,7 @@
     <link rel="icon" href="img/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="css\global.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
@@ -54,7 +55,7 @@
     <main>
         <div class="grid grid-cols-12 gap-4">
         <!-- ROW 1 -->
-            <div id="design" class="relative col-start-1 col-span-5 md:col-span-4">
+            <!-- <div id="design" class="relative col-start-1 col-span-5 md:col-span-4">
                 <svg class="wobble" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 399 173" fill="none">
                     <g filter="url(#filter0_d_24_221)">
                       <path d="M149.989 34.136C89.7915 -9.91347 24.914 15.782 0 34.136V124.437C56.5616 168.211 163.625 156.373 178.27 124.437C194.43 151.968 294 159 312 113C414 113 391.468 14.0383 294 34.1359C266 -21 167.16 -0.002388 149.989 34.136Z" fill="#DAF4FF"/>
@@ -73,9 +74,9 @@
                     </defs>
                 </svg>                
                 <h1 class="fade-in-down-s absolute top-0 left-3 lg:top-10 lg:left-20 md:top-3 md:left-8 flex justify-center text-xl xl:text-5xl lg:text-4xl md:text-3xl leading-loose  mt-2 md:mt-3 xl:mt-5 drop-shadow-lg">Meeple 4 People</h1>    
-            </div>    
+            </div>     -->
             <div class="col-span-full grid grid-cols-11 gap-x-2 md:gap-x-4 ">
-               
+                <h1 class="fade-in-down-s col-start-4 col-span-5 flex justify-center text-2xl xl:text-6xl lg:text-5xl md:text-3xl pt-4 md:pt-0 md:pb-2 drop-shadow-lg">Meeple 4 People</h1>
                 <!-- STRING SVG -->
                 <svg class="col-span-full drop-shadow-md" xmlns="http://www.w3.org/2000/svg" viewBox="0 -5 1512 25" fill="none">
                     <path d="M0 4.92285C43.5556 7.29924 223.689 20.6262 315.778 14.9229C430.889 7.79367 482.444 8.94976 575.778 14.9229C669.111 20.8959 712.444 22.2447 840 14.9229C942.667 9.02965 1006 -1.96853 1169.33 12.9133C1305.5 25.32 1417 20.9133 1512 9.92285" stroke="#FFEAC1" stroke-width="8" stroke-linecap="round"/>
@@ -86,15 +87,65 @@
                         <div class="w-5 h-6 xl:w-10 xl:h-10 bg-red-200 m-auto drop-shadow-lg"></div>
                         <div class="w-5 h-6 xl:w-10 xl:h-10 bg-red-200 m-auto drop-shadow-lg"></div>    
                     </div>
-                    <div class="bg-orange-100 py-5 px-1 rounded-md drop-shadow-lg hover:bg-rose-300">
-                        <h4 class="flex justify-center m-auto p-5 bg-white rounded-md w-11/12 drop-shadow-lg text-lg">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</h4>
+                    <div class="slider bg-orange-100 pt-0 pb-2 px-1 rounded-lg drop-shadow-lg md:px-4 lg:px-8 lg:pb-4 xl:px-10">
+                        <div>
+                            <video autoplay muted loop>
+                                <source src="mp4\home.mp4" type="video/mp4">
+                            </video>
+                            <!-- <h2 class="text-md md:text-2xl lg:text-3xl">Home</h2>         -->
+                        </div>
+                        <div>        
+                            <video autoplay muted loop>
+                                <source src="mp4\reservation.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div>        
+                            <video autoplay muted loop>
+                                <source src="mp4\game.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div>        
+                            <video autoplay muted loop>
+                                <source src="mp4\snack.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div>        
+                            <video autoplay muted loop>
+                                <source src="mp4\blog.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div>        
+                            <video autoplay muted loop>
+                                <source src="mp4\about.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div>        
+                            <video autoplay muted loop>
+                                <source src="mp4\contact.mp4" type="video/mp4">
+                            </video>
+                        </div>
                     </div>
+                </div>
+                <div class="col-start-2 col-span-9 text-center">
+                    <a href="https://selenechoi.github.io/mp4/"><button class="transition ease-in duration-500 text-sm md:text-2xl lg:text-3xl xl:text-4xl border-4 border-rose-300 rounded-xl px-4 py-1 lg:px-6 xl:py-2 mx-2 my-1 md:my-4 lg:my-8 bg-rose-300 text-slate-900 hover:bg-transparent ">View Site</button></a>
+                    <a href="https://github.com/SeleneChoi/mp4" target="_blank"><button class="transition ease-in duration-500 text-sm md:text-2xl lg:text-3xl xl:text-4xl border-4 border-rose-300 rounded-xl px-4 py-1 lg:px-6 xl:py-2 mx-2 my-1 md:my-4 lg:my-8 bg-rose-300 text-slate-900 hover:bg-transparent ">View Code</button></a>
+                </div>
+            </div>
+            <div class="col-start-4 col-span-7 text-left">                          
+                <h4>Role : Designer, Developer</h4>
+                <h4>Date : September 2023</h4>
+                <h4>Languages : HTML | CSS | JavaScript</h4>
+                <h4>Other tools : Jquery | SlickSlider | AfterEffect | Photoshop</h4>
+                <h4>Collaborators : Christine Lee | Nicola Lee | Julie Chan - Design & Content Creating</h4>
+                <h4>Overview: //</h4>
+            </div>
+        </div>
+
+            <div class="flex flex-row justify-center mt-20">
+                <a class="hover:animate-bounce lg:text-2xl drop-shadow-lg" href="#top"><h4 class="text-md md:text-2xl lg:text-3xl underline decoration-wavy underline-offset-8 decoration-orange-200 drop-shadow-lg hover:decoration-pink-400 mx-5">Go to Top</h4></a>
+                <a class="hover:animate-bounce lg:text-2xl drop-shadow-lg" href="project.html"><h4 class="text-md md:text-2xl lg:text-3xl underline decoration-wavy underline-offset-8 decoration-orange-200 drop-shadow-lg hover:decoration-pink-400 mx-5">More Projects</h4></a>
             </div>
 
-            <a class="hover:animate-bounce col-span-full lg:text-2xl flex justify-center drop-shadow-lg mt-10" href="#top"><h4 class="text-md md:text-2xl lg:text-3xl underline decoration-wavy underline-offset-8 decoration-orange-200 drop-shadow-lg hover:decoration-pink-400">GO TO TOP</h4></a>
-            <a class="hover:animate-bounce col-span-full lg:text-2xl flex justify-center drop-shadow-lg mt-10" href="project.html"><h4 class="text-md md:text-2xl lg:text-3xl underline decoration-wavy underline-offset-8 decoration-orange-200 drop-shadow-lg hover:decoration-pink-400">GO BACK</h4></a>
-
-        </div>
     </main>
     <footer>
         <div class="flex flex-col justify-items-center items-center my-12 md:my-16 lg:mt-32">
@@ -110,7 +161,8 @@
         </div>
     </footer>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="js/eventHandler.js"></script>
-
 </body>
 </html>

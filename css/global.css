@@ -130,3 +130,34 @@ h1 {
     35% { transform: translateX(25%); }
     100% { transform: translateX(0%); }
   }
+
+  .slider {
+    display: flex;
+    flex-direction: row;
+  }
+  .slick-list{
+    border-radius: 1em;
+    display: flex;
+  }
+  .slick-prev, .slick-next {
+    visibility: hidden;
+  }
+  
+  .slick-dots{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 2em;
+  }
+  .slick-dots li {
+    margin: 0 0.5em ;
+    transition: 0.5s;
+  }
+  @media screen and (max-width: 560px){
+    .slick-dots{
+      font-size: 1em;
+    }
+  }
+  .slick-dots li:active, .slick-dots li:hover {
+    color: rgb(255, 118, 141);
+  }

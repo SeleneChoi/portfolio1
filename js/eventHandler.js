@@ -26,3 +26,17 @@ dropdown.addEventListener('mouseleave', () => {
     button.classList.remove('underline','md:text-3xl');
     }
 });
+
+//  SLICK SLIDER
+$(document).ready(function(){
+    console.log("hmmm");
+    $('.slider').slick({
+    dots: true,
+    infinite: true,
+    speed: 2000,
+    slidesToShow: 1,
+    adaptiveHeight: true,
+    autoplay: true,
+    autoplaySpeed: 10000,
+    });
+  });
