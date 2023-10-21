@@ -29,14 +29,14 @@ dropdown.addEventListener('mouseleave', () => {
 
 //  SLICK SLIDER
 $(document).ready(function(){
-    console.log("hmmm");
+    // console.log("hmmm");
     $('.slider').slick({
     dots: true,
     infinite: true,
-    speed: 2000,
+    speed: 500,
     slidesToShow: 1,
     adaptiveHeight: true,
     autoplay: true,
-    autoplaySpeed: 10000,
+    autoplaySpeed: 1000,
     });
   });
