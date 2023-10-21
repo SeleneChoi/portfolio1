@@ -139,6 +139,7 @@ h1 {
     border-radius: 1em;
     display: flex;
   }
+  
   .slick-prev, .slick-next {
     visibility: hidden;
   }
