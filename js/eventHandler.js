@@ -37,6 +37,6 @@ $(document).ready(function(){
     slidesToShow: 1,
     adaptiveHeight: true,
     autoplay: true,
-    autoplaySpeed: 1000,
+    autoplaySpeed: 2000,
     });
   });
