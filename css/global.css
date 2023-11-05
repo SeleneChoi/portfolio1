@@ -131,6 +131,8 @@ h1 {
     100% { transform: translateX(0%); }
   }
 
+
+  /* SLICK SLIDER EDIT */
   .slider {
     display: flex;
     flex-direction: row;
@@ -162,3 +164,6 @@ h1 {
   .slick-dots li:active, .slick-dots li:hover {
     color: rgb(255, 118, 141);
   }
+
+
+  /* SVG ANIMATION */

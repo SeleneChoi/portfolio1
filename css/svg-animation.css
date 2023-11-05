@@ -1,0 +1,159 @@
+:root {
+    --pink: #F0B1B7;
+}
+
+.s {
+    stroke-dasharray: 550;
+    stroke-dashoffset: 550;
+    animation: s 10s linear forwards;
+}
+
+@keyframes s {
+    10% {
+        stroke-dashoffset: 0;
+    }
+
+    90%, 100% {
+        stroke-dashoffset: 0;
+        fill: #000
+    }
+}
+
+/* pink: #F0B1B7 */
+.c {
+    stroke-dasharray: 550;
+    stroke-dashoffset: 550;
+    animation: c 10s linear forwards;
+}
+
+@keyframes c {
+    10% {
+        stroke-dashoffset: 550;
+    }
+
+    20% {
+        stroke-dashoffset: 0;
+    }
+
+    90%, 100% {
+        stroke-dashoffset: 0;
+        fill: #000
+    }
+}
+
+.h {
+    stroke-dasharray: 550;
+    stroke-dashoffset: 550;
+    animation: h 10s linear forwards;
+}
+
+@keyframes h {
+    20% {
+        stroke-dashoffset: 550;
+    }
+
+    30% {
+        stroke-dashoffset: 0;
+    }
+
+    90%, 100% {
+        stroke-dashoffset: 0;
+        fill: #000
+    }
+}
+
+.o {
+    stroke-dasharray: 550;
+    stroke-dashoffset: 550;
+    animation: o 10s linear forwards;
+}
+
+@keyframes o {
+    30% {
+        stroke-dashoffset: 550;
+    }
+
+    40% {
+        stroke-dashoffset: 0;
+    }
+
+    90%, 100% {
+        stroke-dashoffset: 0;
+        fill: #000
+    }
+}
+
+.o_fill {
+    stroke-dasharray: 550;
+    stroke-dashoffset: 550;
+    animation: o_fill 10s linear forwards;
+}
+
+@keyframes o_fill {
+    30% {
+        stroke-dashoffset: 550;
+    }
+
+    40% {
+        stroke-dashoffset: 0;
+    }
+    90% {
+        stroke-dashoffset: 0;
+    }
+    100% {
+        stroke-dashoffset: 0;
+        fill: var(--pink);
+    }
+}
+
+.i {
+    stroke-dasharray: 550;
+    stroke-dashoffset: 550;
+    animation: draw 10s linear forwards;
+}
+
+@keyframes draw {
+    40% {
+        stroke-dashoffset: 550;
+    }
+
+    50% {
+        stroke-dashoffset: 0;
+    }
+
+    90%, 100% {
+        stroke-dashoffset: 0;
+        fill: #000
+    }
+}
+
+.dot {
+    stroke-dasharray: 550;
+    stroke-dashoffset: 550;
+    animation: dot 0.8s 4.5s ease-in forwards;
+    visibility: hidden;
+}
+
+@keyframes dot {
+    0% {
+        transform: translateY(0px);
+        visibility: visible;
+    }
+    10% {
+        transform: translateY(22px);
+    }
+    45% {
+        transform: translateY(0px);
+    }
+    55% {
+        transform: translateY(22px);
+        stroke: var(--pink);
+        fill: var(--pink);
+    }
+    100% {
+        visibility: visible;
+        transform: translateY(8px);
+        stroke: var(--pink);
+        fill: var(--pink);
+    }
+}
