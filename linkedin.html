@@ -1,121 +1,257 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SeleneChoi-FrontEndDeveloper</title>
     <link rel="icon" href="img/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="css\global.css">
+    <link rel="stylesheet" href="css/svg-animation.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
+
 <body class="bg-repeat bg-auto" style="background-image: url('img/bg.png')">
     <!-- class="fixed z-20 top-0 bg-transparent" -->
     <header>
         <div class="grid grid-cols-12 gap-4 drop-shadow-lg">
-            <div class="fade-in-down-s col-start-1 xl:col-span-2 xl:ml-6 xl:pt-6 lg:col-span-2 md:col-span-3   sm:col-start-1 col-span-4 mt-4 pl-4" ><a href="index.html"><img class="drop-shadow-lg" src="img\logo.png" alt="logo"></a></div>
+            <div
+                class="col-start-1 xl:col-span-2 xl:ml-6 xl:pt-6 lg:col-span-2 md:col-span-3   sm:col-start-1 col-span-4 mt-4 pl-4">
+                <a href="index.html">
+                    <!-- logo svg -->
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" viewBox="0 0 310 75"
+                        enable-background="new 0 0 305 73" xml:space="preserve">
+                        <!-- S -->
+                        <path class="s" stroke="#000" fill="none" opacity="1.000000" d="
+              M1.000000,73.000000 
+                 C1.000000,69.638710 1.00000,66.277428 1.468946,62.452629 
+                 C22.123837,61.989117 42.309780,61.989117 62.589432,61.989117 
+                 C62.589432,55.431381 62.589432,49.362362 62.589432,42.712379 
+                 C42.292389,42.712379 22.237291,42.712379 2.152785,42.262680 
+                 C2.082252,28.208654 2.041126,14.604327 2.000000,1.000000 
+                 C25.354227,1.000000 48.708454,1.000000 72.459488,1.456342 
+                 C72.856300,5.181671 72.856300,8.450656 72.856300,12.090260 
+                 C52.253452,12.090260 32.197556,12.090260 12.078514,12.090260 
+                 C12.078514,18.544081 12.078514,24.597704 12.078514,31.052391 
+                 C32.364983,31.052391 52.413624,31.052391 72.823250,31.052391 
+                 C72.823250,45.219780 72.823250,58.985104 72.371277,72.827484 
+                 C48.279537,72.936363 24.639769,72.968178 1.000000,73.000000 
+              z" />
+                        <!-- C -->
+                        <path class="c" stroke="#000" opacity="1.000000" fill="none" d="
+              M144.531342,1.000000 
+                 C145.000000,4.462535 145.000000,7.925070 145.000000,11.789488 
+                 C124.904671,11.789488 105.203606,11.789488 85.171692,11.789488 
+                 C85.171692,28.558620 85.171692,44.930397 85.171692,62.006828 
+                 C104.305061,62.006828 123.674713,62.006828 143.680435,62.179913 
+                 C144.511810,62.602577 144.706818,62.852398 144.901520,63.102455 
+                 C144.875610,66.026512 144.849716,68.950569 144.336456,72.352951 
+                 C137.359985,72.862053 130.870651,72.943352 124.381828,72.913734 
+                 C107.749947,72.837822 91.118286,72.712601 74.485886,72.164734 
+                 C74.485161,49.943489 74.496468,28.164585 74.464027,6.385746 
+                 C74.461349,4.590271 74.161674,2.795238 74.000000,1.000000 
+                 C97.354225,1.000000 120.708458,1.000000 144.531342,1.000000 
+              z" />
+                        <!-- h -->
+                        <path class="h" stroke="#000" opacity="1.000000" fill="none" d="
+              M147.444168,74.000000 
+                 C146.944244,49.974766 146.888474,25.949532 146.916351,1.462149 
+                 C150.361282,1.000000 153.722580,1.000000 157.541931,1.000000 
+                 C158.000000,11.144772 158.000000,21.289543 158.000000,31.937283 
+                 C178.371155,31.937283 198.748169,31.937283 219.851166,31.937283 
+                 C219.851166,37.176491 219.850800,41.931194 219.851242,46.685898 
+                 C219.851944,54.178818 219.930817,61.673267 219.783340,69.163261 
+                 C219.756470,70.527534 218.806320,71.873627 218.141205,73.614059 
+                 C215.958328,74.000000 213.916672,74.000000 211.431335,73.531372 
+                 C210.987686,63.154037 210.987686,53.245323 210.987686,43.587807 
+                 C192.795654,43.587807 175.240921,43.587807 157.181656,43.587807 
+                 C157.181656,52.417286 157.292938,60.849724 157.083160,69.274170 
+                 C157.043518,70.865753 155.727219,72.425537 155.000000,74.000000 
+                 C152.629440,74.000000 150.258896,74.000000 147.444168,74.000000 
+              z" />
+                        <!-- o -->
+                        <path class="o" stroke="#000" opacity="1.000000" fill="none" d="
+              M256.333313,74.000000 
+                 C250.529419,68.066689 245.168823,62.026962 239.558365,56.228996 
+                 C233.548401,50.018169 227.303192,44.034977 220.755783,37.551533 
+                 C232.882294,25.461039 244.831100,13.547708 256.889954,1.317189 
+                 C257.000000,1.000000 257.500000,1.000000 257.858063,1.317862 
+                 C269.042694,12.447478 279.886719,23.241858 290.669373,34.097221 
+                 C291.778961,35.214275 292.521729,36.695660 293.130096,38.185150 
+                 C284.526215,46.658672 276.187439,54.916084 267.946625,63.270138 
+                 C264.523346,66.740471 261.309235,70.417152 258.000000,74.000000 
+                 C257.555542,74.000000 257.111115,74.000000 256.333313,74.000000 
+              M253.924286,56.530399 
+                 C255.100571,57.645412 256.276855,58.760429 257.138397,59.577087 
+                 C264.560913,52.093025 271.798401,44.795502 278.736328,37.800041 
+                 C271.758026,30.783567 264.550629,23.536768 258.049896,17.000498 
+                 C250.931656,24.028555 243.648010,31.219910 235.510773,39.254055 
+                 C241.305649,44.687088 247.362915,50.366108 253.924286,56.530399 
+              z" />
+                        <!-- pink fill for o -->
+                        <path class="o_fill" stroke="#000" opacity="1.000000" fill="none" d="
+              M253.672226,56.287762 
+                 C247.362915,50.366108 241.305649,44.687088 235.510773,39.254055 
+                 C243.648010,31.219910 250.931656,24.028555 258.049896,17.000498 
+                 C264.550629,23.536768 271.758026,30.783567 278.736328,37.800041 
+                 C271.798401,44.795502 264.560913,52.093025 257.138397,59.577087 
+                 C256.276855,58.760429 255.100571,57.645412 253.672226,56.287762 
+              z" />
+                        <!-- dot for i -->
+                        <circle class="dot" stroke="black" fill="black" r="6" cx="300" cy="8.5" />
+
+                        <!-- i -->
+                        <path class="i" stroke="#000" opacity="1.000000" fill="none" d="
+              M304.766998,72.316498 
+                 C301.591919,72.778801 298.477356,72.790939 294.953430,72.718155 
+                 C294.520172,61.377682 294.496277,50.122131 294.458282,38.425686 
+                 C297.719696,37.525578 300.995178,37.066360 304.827484,36.529079 
+                 C304.827484,48.843346 304.827484,60.354843 304.766998,72.316498 
+              z" />
+                    </svg>
+                </a>
+            </div>
             <div class="fade-in-down-l relative col-start-5 col-span-full">
-                <svg class="wobble2" xmlns="http://www.w3.org/2000/svg" width="100%" height="auto" viewBox="0 0 926 216" fill="none">
+                <svg class="wobble2" xmlns="http://www.w3.org/2000/svg" width="100%" height="auto" viewBox="0 0 926 216"
+                    fill="none">
                     <g filter="url(#filter0_d_24_83)">
-                      <path d="M106.312 -2.16857C181.111 -3.95211 206.907 -19.6662 210.456 -36.4207L945.943 -50C950.571 -22.1659 945.943 62.2823 945.943 134.435C800.141 220.977 456.698 204.358 408.098 157.337C322.688 74.7034 229.896 149.635 82.2434 120.045C-65.4093 90.4542 12.8142 0.0608635 106.312 -2.16857Z" fill="#F0ADB2"/>
+                        <path
+                            d="M106.312 -2.16857C181.111 -3.95211 206.907 -19.6662 210.456 -36.4207L945.943 -50C950.571 -22.1659 945.943 62.2823 945.943 134.435C800.141 220.977 456.698 204.358 408.098 157.337C322.688 74.7034 229.896 149.635 82.2434 120.045C-65.4093 90.4542 12.8142 0.0608635 106.312 -2.16857Z"
+                            fill="#F0ADB2" />
                     </g>
                     <defs>
-                      <filter id="filter0_d_24_83" x="0" y="-50" width="968" height="266" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                        <feOffset dx="10" dy="10"/>
-                        <feGaussianBlur stdDeviation="5"/>
-                        <feComposite in2="hardAlpha" operator="out"/>
-                        <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 0.919444 0 0 0 0 0.758333 0 0 0 1 0"/>
-                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_24_83"/>
-                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_24_83" result="shape"/>
-                      </filter>
+                        <filter id="filter0_d_24_83" x="0" y="-50" width="968" height="266" filterUnits="userSpaceOnUse"
+                            color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                            <feColorMatrix in="SourceAlpha" type="matrix"
+                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                            <feOffset dx="10" dy="10" />
+                            <feGaussianBlur stdDeviation="5" />
+                            <feComposite in2="hardAlpha" operator="out" />
+                            <feColorMatrix type="matrix"
+                                values="0 0 0 0 1 0 0 0 0 0.919444 0 0 0 0 0.758333 0 0 0 1 0" />
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_24_83" />
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_24_83" result="shape" />
+                        </filter>
                     </defs>
                 </svg>
-                <div class="fade-in-down-s absolute right-1 top-2 lg:right-2 lg:top-2 xl:right-6 xl:top-6 grid grid-cols-6 lg:gap-4 md:gap-1">
+                <div
+                    class="fade-in-down-s absolute right-1 top-2 lg:right-2 lg:top-2 xl:right-6 xl:top-6 grid grid-cols-6 lg:gap-4 md:gap-1">
                     <!-- Socialmedia icon -->
-                    <a class="hover:animate-bounce col-start-3 col-span-1  lg:text-4xl m-2 px-2 flex justify-center items-center drop-shadow-lg md:text-2xl" href="https://www.linkedin.com/in/selene-choi-444227240/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a class="hover:animate-bounce col-span-1  lg:text-4xl m-2 px-2 flex justify-center items-center drop-shadow-lg md:text-2xl" href="https://github.com/SeleneChoi" target="_blank"><i class="fab fa-github "></i></a>
-                    <a class="hover:animate-bounce col-span-1  lg:text-4xl m-2 px-2 flex justify-center items-center drop-shadow-lg md:text-2xl" href="https://www.instagram.com/selene__choi/" target="_blank"><i class="fab fa-instagram "></i></a>
-                    <a class="hover:animate-bounce col-span-1  lg:text-4xl m-2 px-2 flex justify-center items-center drop-shadow-lg md:text-2xl" href="mailto:selenechoi0214@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
-                    <a class="hover:animate-bounce col-start-3 text-md md:col-start-1 md:col-span-2 lg:text-2xl flex justify-center drop-shadow-lg md:text-xl" href="index.html"><h4 class="hover:underline decoration-wavy underline-offset-8 decoration-pink-400 md:hover:text-3xl drop-shadow-lg">HOME</h4></a>
-                    <a class="hover:animate-bounce md:col-span-2  text-md lg:text-2xl flex justify-center drop-shadow-lg hover:underline decoration-wavy underline-offset-8 decoration-pink-400 md:hover:text-3xl md:text-xl" href="about.html"><h4>ABOUT</h4></a>
+                    <a class="hover:animate-bounce col-start-3 col-span-1  lg:text-4xl m-2 px-2 flex justify-center items-center drop-shadow-lg md:text-2xl"
+                        href="https://www.linkedin.com/in/selene-choi-444227240/" target="_blank"><i
+                            class="fab fa-linkedin"></i></a>
+                    <a class="hover:animate-bounce col-span-1  lg:text-4xl m-2 px-2 flex justify-center items-center drop-shadow-lg md:text-2xl"
+                        href="https://github.com/SeleneChoi" target="_blank"><i class="fab fa-github "></i></a>
+                    <a class="hover:animate-bounce col-span-1  lg:text-4xl m-2 px-2 flex justify-center items-center drop-shadow-lg md:text-2xl"
+                        href="https://www.instagram.com/selene__choi/" target="_blank"><i
+                            class="fab fa-instagram "></i></a>
+                    <a class="hover:animate-bounce col-span-1  lg:text-4xl m-2 px-2 flex justify-center items-center drop-shadow-lg md:text-2xl"
+                        href="mailto:selenechoi0214@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+                    <a class="hover:animate-bounce col-start-3 text-md md:col-start-1 md:col-span-2 lg:text-2xl flex justify-center drop-shadow-lg md:text-xl"
+                        href="index.html">
+                        <h4
+                            class="hover:underline decoration-wavy underline-offset-8 decoration-pink-400 md:hover:text-3xl drop-shadow-lg">
+                            HOME</h4>
+                    </a>
+                    <a class="hover:animate-bounce md:col-span-2  text-md lg:text-2xl flex justify-center drop-shadow-lg hover:underline decoration-wavy underline-offset-8 decoration-pink-400 md:hover:text-3xl md:text-xl"
+                        href="about.html">
+                        <h4>ABOUT</h4>
+                    </a>
                     <div class=" col-span-2  text-md lg:text-2xl flex flex-col justify-center drop-shadow-lg">
-                        <button id="dropdownHoverButton" class="xl:text-3xl underline decoration-wavy underline-offset-8 decoration-orange-200 hover:decoration-pink-400 lg:text-2xl md:hover:text-3xl pb-2 md:pb-5 md:text-xl">PROJECTs</button>
+                        <button id="dropdownHoverButton"
+                            class="xl:text-3xl underline decoration-wavy underline-offset-8 decoration-orange-200 hover:decoration-pink-400 lg:text-2xl md:hover:text-3xl pb-2 md:pb-5 md:text-xl">PROJECTs</button>
                         <div id="dropdownHover" class="hidden flex flex-col md:text-xl lg:text-2xl items-center">
-                            <a class="hover:animate-bounce hover:underline decoration-wavy undeline-offset-6 decoration-orange-200 py-1 md:py-2" href="project.html#develop">Design&Develop</a>
-                            <a class="hover:animate-bounce hover:underline decoration-wavy undeline-offset-6 decoration-orange-200" href="project.html#design">UXUI Design</a>
+                            <a class="hover:animate-bounce hover:underline decoration-wavy undeline-offset-6 decoration-orange-200 py-1 md:py-2"
+                                href="project.html#develop">Design&Develop</a>
+                            <a class="hover:animate-bounce hover:underline decoration-wavy undeline-offset-6 decoration-orange-200"
+                                href="project.html#design">UXUI Design</a>
                         </div>
-                    </div>                  
+                    </div>
                 </div>
             </div>
-        </div>    
+        </div>
     </header>
     <main>
-    <!-- <main class="mt-20 md:mt-36 lg:mt-40 xl:mt-60"> -->
+        <!-- <main class="mt-20 md:mt-36 lg:mt-40 xl:mt-60"> -->
         <div class="grid grid-cols-12 gap-4">
             <div class="col-span-full grid grid-cols-11 gap-x-2 md:gap-x-4 mt-4 md:mt-10">
-                <h1 class="col-span-full text-center fade-in-down-s text-2xl xl:text-6xl lg:text-5xl md:text-3xl pt-4 md:pt-0 md:pb-2 drop-shadow-lg">LinkedIn Redesign</h1>
+                <h1
+                    class="col-span-full text-center fade-in-down-s text-2xl xl:text-6xl lg:text-5xl md:text-3xl pt-4 md:pt-0 md:pb-2 drop-shadow-lg">
+                    LinkedIn Redesign</h1>
                 <!-- STRING SVG -->
-                <svg class="col-span-full drop-shadow-md" xmlns="http://www.w3.org/2000/svg" viewBox="0 -5 1512 25" fill="none">
-                    <path d="M0 4.92285C43.5556 7.29924 223.689 20.6262 315.778 14.9229C430.889 7.79367 482.444 8.94976 575.778 14.9229C669.111 20.8959 712.444 22.2447 840 14.9229C942.667 9.02965 1006 -1.96853 1169.33 12.9133C1305.5 25.32 1417 20.9133 1512 9.92285" stroke="#FFEAC1" stroke-width="8" stroke-linecap="round"/>
+                <svg class="col-span-full drop-shadow-md" xmlns="http://www.w3.org/2000/svg" viewBox="0 -5 1512 25"
+                    fill="none">
+                    <path
+                        d="M0 4.92285C43.5556 7.29924 223.689 20.6262 315.778 14.9229C430.889 7.79367 482.444 8.94976 575.778 14.9229C669.111 20.8959 712.444 22.2447 840 14.9229C942.667 9.02965 1006 -1.96853 1169.33 12.9133C1305.5 25.32 1417 20.9133 1512 9.92285"
+                        stroke="#FFEAC1" stroke-width="8" stroke-linecap="round" />
                 </svg>
                 <div class="col-start-2 col-span-9 text-center lg:mb-10 xl:mx-8 flex flex-col">
                     <div class="flex flex-row">
                         <div class="w-5 h-6 xl:w-10 xl:h-10 bg-red-200 m-auto drop-shadow-lg"></div>
                         <div class="w-5 h-6 xl:w-10 xl:h-10 bg-red-200 m-auto drop-shadow-lg"></div>
-                        <div class="w-5 h-6 xl:w-10 xl:h-10 bg-red-200 m-auto drop-shadow-lg"></div>    
+                        <div class="w-5 h-6 xl:w-10 xl:h-10 bg-red-200 m-auto drop-shadow-lg"></div>
                     </div>
-                    <div class="slider bg-orange-100 pt-0 pb-2 px-1 rounded-lg drop-shadow-lg md:px-4 lg:px-8 lg:pb-4 xl:px-10 lg:w-4/5 flex flex-col lg:mx-auto">
+                    <div
+                        class="slider bg-orange-100 pt-0 pb-2 px-1 rounded-lg drop-shadow-lg md:px-4 lg:px-8 lg:pb-4 xl:px-10 lg:w-4/5 flex flex-col lg:mx-auto">
                         <div>
                             <video autoplay muted loop>
                                 <source src="" type="video/mp4">
                             </video>
                         </div>
-                        <div>    
-                            <img src="" alt="">    
+                        <div>
+                            <img src="" alt="">
                         </div>
-                        <div>    
-                            <img src="" alt="">    
+                        <div>
+                            <img src="" alt="">
                         </div>
-                        <div>    
-                            <img src="" alt="">    
+                        <div>
+                            <img src="" alt="">
                         </div>
                     </div>
                 </div>
-                <div class="col-start-2 col-span-9 text-left grid grid-cols-8 gap-4  leading-loose">   
+                <div class="col-start-2 col-span-9 text-left grid grid-cols-8 gap-4  leading-loose">
                     <div class="col-span-full text-center ">
-                        <a href="https://www.figma.com/proto/voJ09e9SrygsFZTgSkAC9M/My-Mori?page-id=0%3A1&type=design&node-id=78-1307&viewport=16%2C263%2C0.3&scaling=scale-down&starting-point-node-id=78%3A1307" target="_blank"><button class="transition ease-in duration-500 text-sm md:text-2xl lg:text-3xl xl:text-4xl border-4 border-rose-300 rounded-xl px-4 py-1 mx-2 my-1 md:my-4 md:mx-4 lg:my-8 lg:px-10 xl:py-2 bg-rose-300 text-slate-900 hover:bg-transparent ">Prototype</button></a>
-                        <a href="https://www.figma.com/file/voJ09e9SrygsFZTgSkAC9M/My-Mori?type=design&node-id=0-1&mode=design&t=YKMTdYY9r4mje7LQ-0" target="_blank"><button class="transition ease-in duration-500 text-sm md:text-2xl lg:text-3xl xl:text-4xl border-4 border-rose-300 rounded-xl px-4 py-1 mx-2 my-1 md:my-4 md:mx-4 lg:my-8 lg:px-10 xl:py-2 bg-rose-300 text-slate-900 hover:bg-transparent ">View Design</button></a>
-                    </div>    
+                        <a href="https://www.figma.com/proto/voJ09e9SrygsFZTgSkAC9M/My-Mori?page-id=0%3A1&type=design&node-id=78-1307&viewport=16%2C263%2C0.3&scaling=scale-down&starting-point-node-id=78%3A1307"
+                            target="_blank"><button
+                                class="transition ease-in duration-500 text-sm md:text-2xl lg:text-3xl xl:text-4xl border-4 border-rose-300 rounded-xl px-4 py-1 mx-2 my-1 md:my-4 md:mx-4 lg:my-8 lg:px-10 xl:py-2 bg-rose-300 text-slate-900 hover:bg-transparent ">Prototype</button></a>
+                        <a href="https://www.figma.com/file/voJ09e9SrygsFZTgSkAC9M/My-Mori?type=design&node-id=0-1&mode=design&t=YKMTdYY9r4mje7LQ-0"
+                            target="_blank"><button
+                                class="transition ease-in duration-500 text-sm md:text-2xl lg:text-3xl xl:text-4xl border-4 border-rose-300 rounded-xl px-4 py-1 mx-2 my-1 md:my-4 md:mx-4 lg:my-8 lg:px-10 xl:py-2 bg-rose-300 text-slate-900 hover:bg-transparent ">View
+                                Design</button></a>
+                    </div>
                     <div class="col-start-1 col-span-4 lg:col-start-2 lg:col-span-3 lg:my-2 ">
                         <h4 class="text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl my-2">Date</h4>
                         <p class="text-slate-600 text-sm md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">July 2023</p>
                     </div>
                     <div class="col-start-5 col-span-4 lg:col-start-5 lg:col-span-3 lg:my-2">
                         <h4 class="text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl my-2">Role</h4>
-                        <p class="text-slate-700 text-sm md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">UXUI Designer</p>
+                        <p class="text-slate-700 text-sm md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">UXUI Designer
+                        </p>
                     </div>
                     <div class="col-start-1 col-span-4 lg:col-start-2 lg:col-span-3 lg:my-2">
                         <h4 class="text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl my-2">Languages & Tools</h4>
-                        <p class="text-slate-700 text-sm md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">Figma | Photoshop</p>
+                        <p class="text-slate-700 text-sm md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">Figma |
+                            Photoshop</p>
                     </div>
                     <div class="col-start-1 col-span-8 lg:col-start-2 lg:col-span-6 lg:my-2">
                         <h4 class="text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl">Overview</h4>
                         <div class="text-slate-700 text-sm md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">
                             <p class="my-2">
-                                
+
                             </p>
                             <li class="mx-3 my-2">
-                                
+
                             </li>
                             <li class="mx-3 my-2">
-                                
+
                             </li>
                             <li class="mx-3 my-2">
-                                
+
                             </li>
                         </div>
                     </div>
@@ -123,7 +259,7 @@
                         <h4 class="text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl">Design Process</h4>
                         <div class="text-slate-700 text-sm md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">
                             <p class="my-2">
-                                
+
                             </p>
                             <li class="mx-3 my-2">
                             </li>
@@ -140,30 +276,50 @@
                         </div>
                     </div>
 
-                </div>    
+                </div>
                 <div class="col-span-full text-center ">
-                    <a href="https://www.figma.com/proto/voJ09e9SrygsFZTgSkAC9M/My-Mori?page-id=0%3A1&type=design&node-id=78-1307&viewport=16%2C263%2C0.3&scaling=scale-down&starting-point-node-id=78%3A1307" target="_blank"><button class="transition ease-in duration-500 text-sm md:text-2xl lg:text-3xl xl:text-4xl border-4 border-rose-300 rounded-xl px-4 py-1 mx-2 my-1 md:my-4 md:mx-4 lg:my-8 lg:px-10 xl:py-2 bg-rose-300 text-slate-900 hover:bg-transparent ">Prototype</button></a>
-                    <a href="https://www.figma.com/file/voJ09e9SrygsFZTgSkAC9M/My-Mori?type=design&node-id=0-1&mode=design&t=YKMTdYY9r4mje7LQ-0" target="_blank"><button class="transition ease-in duration-500 text-sm md:text-2xl lg:text-3xl xl:text-4xl border-4 border-rose-300 rounded-xl px-4 py-1 mx-2 my-1 md:my-4 md:mx-4 lg:my-8 lg:px-10 xl:py-2 bg-rose-300 text-slate-900 hover:bg-transparent ">View Design</button></a>
-                </div>    
-        </div>
+                    <a href="https://www.figma.com/proto/voJ09e9SrygsFZTgSkAC9M/My-Mori?page-id=0%3A1&type=design&node-id=78-1307&viewport=16%2C263%2C0.3&scaling=scale-down&starting-point-node-id=78%3A1307"
+                        target="_blank"><button
+                            class="transition ease-in duration-500 text-sm md:text-2xl lg:text-3xl xl:text-4xl border-4 border-rose-300 rounded-xl px-4 py-1 mx-2 my-1 md:my-4 md:mx-4 lg:my-8 lg:px-10 xl:py-2 bg-rose-300 text-slate-900 hover:bg-transparent ">Prototype</button></a>
+                    <a href="https://www.figma.com/file/voJ09e9SrygsFZTgSkAC9M/My-Mori?type=design&node-id=0-1&mode=design&t=YKMTdYY9r4mje7LQ-0"
+                        target="_blank"><button
+                            class="transition ease-in duration-500 text-sm md:text-2xl lg:text-3xl xl:text-4xl border-4 border-rose-300 rounded-xl px-4 py-1 mx-2 my-1 md:my-4 md:mx-4 lg:my-8 lg:px-10 xl:py-2 bg-rose-300 text-slate-900 hover:bg-transparent ">View
+                            Design</button></a>
+                </div>
+            </div>
         </div>
 
-            <div class="flex flex-row justify-center mt-20">
-                <a class="hover:animate-bounce lg:text-2xl drop-shadow-lg" href="#top"><h4 class="text-md md:text-2xl lg:text-3xl underline decoration-wavy underline-offset-8 decoration-orange-200 drop-shadow-lg hover:decoration-pink-400 mx-5">GO TO TOP</h4></a>
-                <a class="hover:animate-bounce lg:text-2xl drop-shadow-lg" href="project.html"><h4 class="text-md md:text-2xl lg:text-3xl underline decoration-wavy underline-offset-8 decoration-orange-200 drop-shadow-lg hover:decoration-pink-400 mx-5">More Projects</h4></a>
-            </div>
+        <div class="flex flex-row justify-center mt-20">
+            <a class="hover:animate-bounce lg:text-2xl drop-shadow-lg" href="#top">
+                <h4
+                    class="text-md md:text-2xl lg:text-3xl underline decoration-wavy underline-offset-8 decoration-orange-200 drop-shadow-lg hover:decoration-pink-400 mx-5">
+                    GO TO TOP</h4>
+            </a>
+            <a class="hover:animate-bounce lg:text-2xl drop-shadow-lg" href="project.html">
+                <h4
+                    class="text-md md:text-2xl lg:text-3xl underline decoration-wavy underline-offset-8 decoration-orange-200 drop-shadow-lg hover:decoration-pink-400 mx-5">
+                    More Projects</h4>
+            </a>
+        </div>
 
     </main>
     <footer>
         <div class="flex flex-col justify-items-center items-center my-12 md:my-16 lg:mt-32">
             <div class="z-20 text-center flex flex-col gap-4 md:w-4/5">
                 <div class="fade-in-down-s flex flex-row self-center gap-3 lg:gap-7 md:gap-5 my-0">
-                    <a class="hover:animate-bounce lg:text-4xl flex justify-center items-center drop-shadow-lg md:text-2xl" href="https://www.linkedin.com/in/selene-choi-444227240/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a class="hover:animate-bounce lg:text-4xl flex justify-center items-center drop-shadow-lg md:text-2xl" href="https://github.com/SeleneChoi" target="_blank"><i class="fab fa-github "></i></a>
-                    <a class="hover:animate-bounce lg:text-4xl flex justify-center items-center drop-shadow-lg md:text-2xl" href="https://www.instagram.com/selene__choi/" target="_blank"><i class="fab fa-instagram "></i></a>
-                    <a class="hover:animate-bounce lg:text-4xl flex justify-center items-center drop-shadow-lg md:text-2xl" href="mailto:selenechoi0214@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>    
+                    <a class="hover:animate-bounce lg:text-4xl flex justify-center items-center drop-shadow-lg md:text-2xl"
+                        href="https://www.linkedin.com/in/selene-choi-444227240/" target="_blank"><i
+                            class="fab fa-linkedin"></i></a>
+                    <a class="hover:animate-bounce lg:text-4xl flex justify-center items-center drop-shadow-lg md:text-2xl"
+                        href="https://github.com/SeleneChoi" target="_blank"><i class="fab fa-github "></i></a>
+                    <a class="hover:animate-bounce lg:text-4xl flex justify-center items-center drop-shadow-lg md:text-2xl"
+                        href="https://www.instagram.com/selene__choi/" target="_blank"><i
+                            class="fab fa-instagram "></i></a>
+                    <a class="hover:animate-bounce lg:text-4xl flex justify-center items-center drop-shadow-lg md:text-2xl"
+                        href="mailto:selenechoi0214@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
                 </div>
-                <h4 class="text-sm xl:text-3xl lg:text-2xl md:text-lg drop-shadow-lg">Created & Built by Selene 2023</h4>    
+                <h4 class="text-sm xl:text-3xl lg:text-2xl md:text-lg drop-shadow-lg">Created & Built by Selene 2023
+                </h4>
             </div>
         </div>
     </footer>
@@ -172,4 +328,5 @@
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="js/eventHandler.js"></script>
 </body>
+
 </html>
