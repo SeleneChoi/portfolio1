@@ -23,7 +23,7 @@ h1 {
 /*  Left,Right */
 .swing1 {
 	transform-origin: top center;
-	animation: swing1 8s ease infinite;
+	animation: swing1 12s ease infinite;
 }
 @keyframes swing1 {
 	10% { transform: rotate(5deg); }
@@ -35,7 +35,7 @@ h1 {
 /* Middle */
 .swing2 {
 	transform-origin: top center;
-	animation: swing2 8s ease infinite;
+	animation: swing2 12s ease infinite;
 }
 @keyframes swing2 {
 	20% { transform: rotate(-5deg); }	
