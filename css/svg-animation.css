@@ -21,14 +21,14 @@
 
 /* pink: #F0B1B7 */
 .c {
-    stroke-dasharray: 550;
-    stroke-dashoffset: 550;
+    stroke-dasharray: 410;
+    stroke-dashoffset: 410;
     animation: c 10s linear forwards;
 }
 
 @keyframes c {
     10% {
-        stroke-dashoffset: 550;
+        stroke-dashoffset: 410;
     }
 
     20% {
@@ -42,14 +42,14 @@
 }
 
 .h {
-    stroke-dasharray: 550;
-    stroke-dashoffset: 550;
+    stroke-dasharray: 350;
+    stroke-dashoffset: 350;
     animation: h 10s linear forwards;
 }
 
 @keyframes h {
     20% {
-        stroke-dashoffset: 550;
+        stroke-dashoffset: 350;
     }
 
     30% {
@@ -63,14 +63,14 @@
 }
 
 .o {
-    stroke-dasharray: 550;
-    stroke-dashoffset: 550;
+    stroke-dasharray: 250;
+    stroke-dashoffset: 250;
     animation: o 10s linear forwards;
 }
 
 @keyframes o {
     30% {
-        stroke-dashoffset: 550;
+        stroke-dashoffset: 250;
     }
 
     40% {
@@ -84,14 +84,14 @@
 }
 
 .o_fill {
-    stroke-dasharray: 550;
-    stroke-dashoffset: 550;
+    stroke-dasharray: 150;
+    stroke-dashoffset: 150;
     animation: o_fill 10s linear forwards;
 }
 
 @keyframes o_fill {
     30% {
-        stroke-dashoffset: 550;
+        stroke-dashoffset: 150;
     }
 
     40% {
@@ -107,14 +107,14 @@
 }
 
 .i {
-    stroke-dasharray: 550;
-    stroke-dashoffset: 550;
+    stroke-dasharray: 300;
+    stroke-dashoffset: 300;
     animation: draw 10s linear forwards;
 }
 
 @keyframes draw {
     40% {
-        stroke-dashoffset: 550;
+        stroke-dashoffset: 300;
     }
 
     50% {
@@ -136,23 +136,23 @@
 
 @keyframes dot {
     0% {
-        transform: translateY(0px);
+        transform: translateY(0px) scaleY(100%);
         visibility: visible;
     }
     10% {
-        transform: translateY(22px);
+        transform: translateY(28px) scaleY(50%);
     }
     45% {
-        transform: translateY(0px);
+        transform: translateY(0px) scaleY(100%);
     }
     55% {
-        transform: translateY(22px);
+        transform: translateY(28px) scaleY(60%);
         stroke: var(--pink);
         fill: var(--pink);
     }
     100% {
         visibility: visible;
-        transform: translateY(8px);
+        transform: translateY(8px) scaleY(100%);
         stroke: var(--pink);
         fill: var(--pink);
     }
