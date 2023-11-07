@@ -99,7 +99,9 @@
 }
 
 @keyframes o_fill {
-    0%{}
+    0%{
+        fill: none;
+    }
     30% {
         stroke-dashoffset: 150;
     }
@@ -124,7 +126,9 @@
 }
 
 @keyframes draw {
-    0%{}
+    0%{
+        fill: none;
+    }
     40% {
         stroke-dashoffset: 300;
     }
