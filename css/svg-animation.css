@@ -5,19 +5,19 @@
 .s {
     stroke-dasharray: 550;
     stroke-dashoffset: 550;
-    -webkit-animation: s 5.3s linear forwards;
+    -webkit-animation: s 4.5s linear forwards;
     animation: s 4.5s linear forwards;
 }
 
 @keyframes s {
     0%{
-        fill: white;
+        fill: none;
     }
     20% {
         stroke-dashoffset: 0;
     }
-    99.9% {
-        fill: white;
+    99% {
+        fill: none;
         stroke-dashoffset: 0;
     }
     100% {
@@ -30,20 +30,22 @@
 .c {
     stroke-dasharray: 410;
     stroke-dashoffset: 410;
-    -webkit-animation: c 10s linear forwards;
-    animation: c 10s linear forwards;
-    fill: white;
+    -webkit-animation: c 4.5s linear forwards;
+    animation: c 4.5s linear forwards;
 }
 
 @keyframes c {
-    10% {
+    20% {
         stroke-dashoffset: 410;
     }
-
-    20% {
+    40% {
         stroke-dashoffset: 0;
     }
-    90%, 100% {
+    99% {
+        fill: none;
+        stroke-dashoffset: 0;
+    }
+    100% {
         stroke-dashoffset: 0;
         fill: #000
     }
@@ -52,23 +54,25 @@
 .h {
     stroke-dasharray: 350;
     stroke-dashoffset: 350;
-    -webkit-animation: h 10s linear forwards;
-    animation: h 10s linear forwards;
+    -webkit-animation: h 4.5s linear forwards;
+    animation: h 4.5s linear forwards;
 }
 
 @keyframes h {
     0%{
         fill: none;
     }
-    20% {
+    40% {
         stroke-dashoffset: 350;
     }
-
-    30% {
+    60% {
         stroke-dashoffset: 0;
     }
-
-    90%, 100% {
+    99% {
+        fill: none;
+        stroke-dashoffset: 0;
+    }
+    100% {
         stroke-dashoffset: 0;
         fill: #000
     }
@@ -77,23 +81,25 @@
 .o {
     stroke-dasharray: 250;
     stroke-dashoffset: 250;
-    -webkit-animation: o 10s linear forwards;
-    animation: o 10s linear forwards;
+    -webkit-animation: o 4.5s linear forwards;
+    animation: o 4.5s linear forwards;
 }
 
 @keyframes o {
     0%{
         fill: none;
     }
-    30% {
+    60% {
         stroke-dashoffset: 250;
     }
-
-    40% {
+    80% {
         stroke-dashoffset: 0;
     }
-
-    90%, 100% {
+    99% {
+        fill: none;
+        stroke-dashoffset: 0;
+    }
+    100% {
         stroke-dashoffset: 0;
         fill: #000
     }
@@ -102,22 +108,22 @@
 .o_fill {
     stroke-dasharray: 150;
     stroke-dashoffset: 150;
-    -webkit-animation: o_fill 10s linear forwards;
-    animation: o_fill 10s linear forwards;
+    -webkit-animation: o_fill 4.5s linear forwards;
+    animation: o_fill 4.5s linear forwards;
 }
 
 @keyframes o_fill {
     0%{
         fill: none;
     }
-    30% {
+    60% {
         stroke-dashoffset: 150;
     }
-
-    40% {
+    80% {
         stroke-dashoffset: 0;
     }
-    90% {
+    99% {
+        fill: none;
         stroke-dashoffset: 0;
     }
     100% {
@@ -129,22 +135,25 @@
 .i {
     stroke-dasharray: 300;
     stroke-dashoffset: 300;
-    -webkit-animation: draw 10s linear forwards;
-    animation: draw 10s linear forwards;
+    -webkit-animation: draw 4.5s linear forwards;
+    animation: draw 4.5s linear forwards;
 }
 
 @keyframes draw {
     0%{
-        fill: white;
+        fill: none;
     }
-    40% {
+    80% {
         stroke-dashoffset: 300;
     }
-
-    50% {
+    98% {
         stroke-dashoffset: 0;
     }
-    90%, 100% {
+    99% {
+        fill: none;
+        stroke-dashoffset: 0;
+    }
+    100% {
         stroke-dashoffset: 0;
         fill: #000
     }
@@ -153,8 +162,8 @@
 .dot {
     stroke-dasharray: 550;
     stroke-dashoffset: 550;
-    -webkit-animation: dot 0.8s 4.5s ease-in forwards;
-    animation: dot 0.8s 4.5s ease-in forwards;
+    -webkit-animation: dot 0.4s 4.3s ease-in forwards;
+    animation: dot 0.4s 4.3s ease-in forwards;
     visibility: hidden;
 }
 
@@ -165,17 +174,17 @@
         fill: #000;
         stroke: #000;
     }
-    10% {
+    40% {
         transform: translateY(28px) scaleY(50%);
     }
-    45% {
+    /* 45% {
         transform: translateY(0px) scaleY(100%);
     }
     55% {
         transform: translateY(28px) scaleY(60%);
         stroke: var(--pink);
         fill: var(--pink);
-    }
+    } */
     100% {
         visibility: visible;
         transform: translateY(8px) scaleY(100%);
