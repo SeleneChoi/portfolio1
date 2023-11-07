@@ -5,19 +5,22 @@
 .s {
     stroke-dasharray: 550;
     stroke-dashoffset: 550;
-    -webkit-animation: s 10s linear forwards;
-    animation: s 10s linear forwards;
+    -webkit-animation: s 5.3s linear forwards;
+    animation: s 4.5s linear forwards;
 }
 
 @keyframes s {
     0%{
-        fill: none;
+        fill: white;
     }
-    10% {
+    20% {
         stroke-dashoffset: 0;
     }
-
-    90%, 100% {
+    99.9% {
+        fill: white;
+        stroke-dashoffset: 0;
+    }
+    100% {
         stroke-dashoffset: 0;
         fill: #000
     }
@@ -29,12 +32,10 @@
     stroke-dashoffset: 410;
     -webkit-animation: c 10s linear forwards;
     animation: c 10s linear forwards;
+    fill: white;
 }
 
 @keyframes c {
-    0%{
-        fill: none;
-    }
     10% {
         stroke-dashoffset: 410;
     }
@@ -42,7 +43,6 @@
     20% {
         stroke-dashoffset: 0;
     }
-
     90%, 100% {
         stroke-dashoffset: 0;
         fill: #000
@@ -135,7 +135,7 @@
 
 @keyframes draw {
     0%{
-        fill: none;
+        fill: white;
     }
     40% {
         stroke-dashoffset: 300;
@@ -144,7 +144,6 @@
     50% {
         stroke-dashoffset: 0;
     }
-
     90%, 100% {
         stroke-dashoffset: 0;
         fill: #000
