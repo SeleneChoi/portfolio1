@@ -10,7 +10,9 @@
 }
 
 @keyframes s {
-    0%{}
+    0%{
+        fill: none;
+    }
     10% {
         stroke-dashoffset: 0;
     }
@@ -30,7 +32,9 @@
 }
 
 @keyframes c {
-    0%{}
+    0%{
+        fill: none;
+    }
     10% {
         stroke-dashoffset: 410;
     }
@@ -53,7 +57,9 @@
 }
 
 @keyframes h {
-    0%{}
+    0%{
+        fill: none;
+    }
     20% {
         stroke-dashoffset: 350;
     }
@@ -76,7 +82,9 @@
 }
 
 @keyframes o {
-    0%{}
+    0%{
+        fill: none;
+    }
     30% {
         stroke-dashoffset: 250;
     }
@@ -155,6 +163,8 @@
     0% {
         transform: translateY(0px) scaleY(100%);
         visibility: visible;
+        fill: #000;
+        stroke: #000;
     }
     10% {
         transform: translateY(28px) scaleY(50%);
