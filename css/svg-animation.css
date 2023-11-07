@@ -10,6 +10,7 @@
 }
 
 @keyframes s {
+    0%{}
     10% {
         stroke-dashoffset: 0;
     }
@@ -29,6 +30,7 @@
 }
 
 @keyframes c {
+    0%{}
     10% {
         stroke-dashoffset: 410;
     }
@@ -51,6 +53,7 @@
 }
 
 @keyframes h {
+    0%{}
     20% {
         stroke-dashoffset: 350;
     }
@@ -73,6 +76,7 @@
 }
 
 @keyframes o {
+    0%{}
     30% {
         stroke-dashoffset: 250;
     }
@@ -95,6 +99,7 @@
 }
 
 @keyframes o_fill {
+    0%{}
     30% {
         stroke-dashoffset: 150;
     }
@@ -119,6 +124,7 @@
 }
 
 @keyframes draw {
+    0%{}
     40% {
         stroke-dashoffset: 300;
     }
