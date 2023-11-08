@@ -7,6 +7,7 @@
     stroke-dashoffset: 550;
     -webkit-animation: s 4.5s linear forwards;
     animation: s 4.5s linear forwards;
+    
 }
 
 @keyframes s {
@@ -187,7 +188,7 @@
     } */
     100% {
         visibility: visible;
-        transform: translateY(8px) scaleY(100%);
+        transform: translateY(0px) scaleY(100%);
         stroke: var(--pink);
         fill: var(--pink);
     }
