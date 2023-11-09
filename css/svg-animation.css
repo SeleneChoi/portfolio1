@@ -18,7 +18,7 @@
         stroke-dashoffset: 0;
     }
     99% {
-        fill: none;
+        fill: white;
         stroke-dashoffset: 0;
     }
     100% {
@@ -43,7 +43,7 @@
         stroke-dashoffset: 0;
     }
     99% {
-        fill: none;
+        fill: white;
         stroke-dashoffset: 0;
     }
     100% {
@@ -70,7 +70,7 @@
         stroke-dashoffset: 0;
     }
     99% {
-        fill: none;
+        fill: white;
         stroke-dashoffset: 0;
     }
     100% {
@@ -97,7 +97,7 @@
         stroke-dashoffset: 0;
     }
     99% {
-        fill: none;
+        fill: white;
         stroke-dashoffset: 0;
     }
     100% {
@@ -124,7 +124,7 @@
         stroke-dashoffset: 0;
     }
     99% {
-        fill: none;
+        fill: white;
         stroke-dashoffset: 0;
     }
     100% {
@@ -151,7 +151,7 @@
         stroke-dashoffset: 0;
     }
     99% {
-        fill: none;
+        fill: white;
         stroke-dashoffset: 0;
     }
     100% {
@@ -186,6 +186,7 @@
         stroke: var(--pink);
         fill: var(--pink);
     } */
+    
     100% {
         visibility: visible;
         transform: translateY(0px) scaleY(100%);
