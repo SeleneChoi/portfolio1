@@ -129,7 +129,7 @@
     }
     100% {
         stroke-dashoffset: 0;
-        fill: var(--pink);
+        fill: #F0B1B7;
     }
 }
 
@@ -183,14 +183,14 @@
     }
     55% {
         transform: translateY(28px) scaleY(60%);
-        stroke: var(--pink);
-        fill: var(--pink);
+        stroke: #F0B1B7;
+        fill: #F0B1B7;
     } */
     
     100% {
         visibility: visible;
         transform: translateY(0px) scaleY(100%);
-        stroke: var(--pink);
-        fill: var(--pink);
+        stroke: #F0B1B7;
+        fill: #F0B1B7;
     }
 }
