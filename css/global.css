@@ -9,6 +9,7 @@ body{
     /* background-repeat: repeat-y; */
     font-family: 'Londrina Solid', cursive;
     letter-spacing: 1px;
+    overflow-x: hidden;
   }
 
 h1 {
