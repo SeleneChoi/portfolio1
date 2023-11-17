@@ -79,7 +79,7 @@
     }
 }
 
-.o {
+a svg path.o {
     stroke-dasharray: 250;
     stroke-dashoffset: 250;
     -webkit-animation: o 4.5s linear forwards;
@@ -106,7 +106,7 @@
     }
 }
 
-.o_fill {
+a svg path.o_fill {
     stroke-dasharray: 150;
     stroke-dashoffset: 150;
     -webkit-animation: o_fill 4.5s linear forwards;
