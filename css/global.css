@@ -5,168 +5,284 @@ font-family: 'Nova Round', cursive;
 font-family: 'Londrina Solid', cursive; 
 */
 
-body{
-    /* background-repeat: repeat-y; */
-    font-family: 'Londrina Solid', cursive;
-    letter-spacing: 1px;
-    overflow-x: hidden;
-  }
-a{
-  color: currentColor;
+body {
+  /* background-repeat: repeat-y; */
+  font-family: 'Londrina Solid', cursive;
+  letter-spacing: 1px;
+  overflow-x: hidden;
 }
+
+a {
+  filter: brightness(1.0);
+}
+
 h1 {
   font-family: 'Londrina Solid', cursive;
   letter-spacing: 2px;
 }
 
 .line {
-    font-family: 'Londrina Shadow', cursive;
+  font-family: 'Londrina Shadow', cursive;
 }
 
 /*  Left,Right */
 .swing1 {
-	transform-origin: top center;
-	animation: swing1 12s ease infinite;
+  transform-origin: top center;
+  animation: swing1 12s ease infinite;
 }
+
 @keyframes swing1 {
-	10% { transform: rotate(5deg); }
-	30% { transform: rotate(-5deg); }
-	60% { transform: rotate(3deg); }	
-	70% { transform: rotate(-3deg); }	
-	100% { transform: rotate(1deg); }
+  10% {
+    transform: rotate(5deg);
+  }
+
+  30% {
+    transform: rotate(-5deg);
+  }
+
+  60% {
+    transform: rotate(3deg);
+  }
+
+  70% {
+    transform: rotate(-3deg);
+  }
+
+  100% {
+    transform: rotate(1deg);
+  }
 }
+
 /* Middle */
 .swing2 {
-	transform-origin: top center;
-	animation: swing2 12s ease infinite;
+  transform-origin: top center;
+  animation: swing2 12s ease infinite;
 }
+
 @keyframes swing2 {
-	20% { transform: rotate(-5deg); }	
-	40% { transform: rotate(5deg); }
-	70% { transform: rotate(-4deg); }	
-	80% { transform: rotate(3deg); }	
-	100% { transform: rotate(0deg); }
+  20% {
+    transform: rotate(-5deg);
+  }
+
+  40% {
+    transform: rotate(5deg);
+  }
+
+  70% {
+    transform: rotate(-4deg);
+  }
+
+  80% {
+    transform: rotate(3deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
 }
+
 .swing_pen {
-	transform-origin: bottom right;
-	animation: wobble2 1s ease infinite;
+  transform-origin: bottom right;
+  animation: wobble2 1s ease infinite;
 }
+
 .swing_hand {
-	transform-origin: bottom right;
-	animation: swing_hand 1.5s infinite;
+  transform-origin: bottom right;
+  animation: swing_hand 1.5s infinite;
 }
+
 @keyframes swing_hand {
-	10% { transform: rotatez(-25deg); }	
-	30% { transform: rotatez(25deg); }
-	60% { transform: rotatez(-20deg); }	
-	100% { transform: rotatez(25deg); }	
+  10% {
+    transform: rotatez(-25deg);
+  }
+
+  30% {
+    transform: rotatez(25deg);
+  }
+
+  60% {
+    transform: rotatez(-20deg);
+  }
+
+  100% {
+    transform: rotatez(25deg);
+  }
 }
+
 /* Large graphic */
 .fade-in-down-l {
-	transform-origin: top center;
-	animation: fade-in-down-l 0.8s ease 1;
+  transform-origin: top center;
+  animation: fade-in-down-l 0.8s ease 1;
 }
+
 @keyframes fade-in-down-l {
-    0% {
-      opacity: 0;
-      transform: translateY(-10px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
+
 /* Small object,Text */
 .fade-in-down-s {
-	transform-origin: top center;
-	animation: fade-in-down-s 2s ease 1;
+  transform-origin: top center;
+  animation: fade-in-down-s 2s ease 1;
 }
+
 @keyframes fade-in-down-s {
-    0% {
-      opacity: 0;
-      transform: translateY(-30px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* Cloud, home_introduction bg */
-  .wobble {
-    animation: wobble1 30s ease infinite;
+.wobble {
+  animation: wobble1 30s ease infinite;
+}
+
+@keyframes wobble1 {
+  0% {
+    transform: translateX(0%);
   }
-  @keyframes wobble1 {
-    0% { transform: translateX(0%); }
-    15% { transform: translateX(-25%) rotate(-5deg); }
-    30% { transform: translateX(-5%) rotate(3deg); }
-    45% { transform: translateX(-15%) rotate(-3deg); }
-    60% { transform: translateX(-2%) rotate(2deg); }
-    75% { transform: translateX(-8%) rotate(-1deg); }
-    100% { transform: translateX(0%); }
+
+  15% {
+    transform: translateX(-25%) rotate(-5deg);
   }
+
+  30% {
+    transform: translateX(-5%) rotate(3deg);
+  }
+
+  45% {
+    transform: translateX(-15%) rotate(-3deg);
+  }
+
+  60% {
+    transform: translateX(-2%) rotate(2deg);
+  }
+
+  75% {
+    transform: translateX(-8%) rotate(-1deg);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
 /* NAV BG */
-  .wobble2 {
-    animation: wobble2 40s ease infinite;
-  }
-  @keyframes wobble2 {
-    0% { transform: translateX(0%); }
-    25% { transform: translateX(25%) translateY(-5%) rotate(0deg); }
-    50% { transform: translateX(15%) translateY(0%) rotate(0deg); }
-    75% { transform: translateX(8%) translateY(-5%) rotate(1deg); }
-    100% { transform: translateX(0%); }
-  }
-  /* Footer animation */
-  .wobble_left {
-    animation: wobble_left 20s ease infinite;
-  }
-  @keyframes wobble_left {
-    0% { transform: translateX(0%); }
-    35% { transform: translateX(-25%); }
-    100% { transform: translateX(0%); }
-  }
-  .wobble_right {
-    animation: wobble_right 20s ease infinite;
-  }
-  @keyframes wobble_right {
-    0% { transform: translateX(0%); }
-    35% { transform: translateX(25%); }
-    100% { transform: translateX(0%); }
+.wobble2 {
+  animation: wobble2 40s ease infinite;
+}
+
+@keyframes wobble2 {
+  0% {
+    transform: translateX(0%);
   }
 
-
-  /* SLICK SLIDER EDIT */
-  .slider {
-    display: flex;
-    flex-direction: row;
-  }
-  .slick-list{
-    border-radius: 1em;
-    display: flex;
-  }
-  
-  .slick-prev, .slick-next {
-    visibility: hidden;
-  }
-  
-  .slick-dots{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    font-size: 2em;
-  }
-  .slick-dots li {
-    margin: 0 0.5em ;
-    transition: 0.5s;
-  }
-  @media screen and (max-width: 560px){
-    .slick-dots{
-      font-size: 1em;
-    }
-  }
-  .slick-dots li:active, .slick-dots li:hover {
-    color: rgb(255, 118, 141);
+  25% {
+    transform: translateX(25%) translateY(-5%) rotate(0deg);
   }
 
+  50% {
+    transform: translateX(15%) translateY(0%) rotate(0deg);
+  }
 
-  /* SVG ANIMATION */
+  75% {
+    transform: translateX(8%) translateY(-5%) rotate(1deg);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+/* Footer animation */
+.wobble_left {
+  animation: wobble_left 20s ease infinite;
+}
+
+@keyframes wobble_left {
+  0% {
+    transform: translateX(0%);
+  }
+
+  35% {
+    transform: translateX(-25%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.wobble_right {
+  animation: wobble_right 20s ease infinite;
+}
+
+@keyframes wobble_right {
+  0% {
+    transform: translateX(0%);
+  }
+
+  35% {
+    transform: translateX(25%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+
+/* SLICK SLIDER EDIT */
+.slider {
+  display: flex;
+  flex-direction: row;
+}
+
+.slick-list {
+  border-radius: 1em;
+  display: flex;
+}
+
+.slick-prev,
+.slick-next {
+  visibility: hidden;
+}
+
+.slick-dots {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 2em;
+}
+
+.slick-dots li {
+  margin: 0 0.5em;
+  transition: 0.5s;
+}
+
+@media screen and (max-width: 560px) {
+  .slick-dots {
+    font-size: 1em;
+  }
+}
+
+.slick-dots li:active,
+.slick-dots li:hover {
+  color: rgb(255, 118, 141);
+}
+
+
+/* SVG ANIMATION */
