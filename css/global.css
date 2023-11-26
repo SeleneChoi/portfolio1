@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Galindo&family=Londrina+Shadow&family=Londrina+Solid&family=Nova+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Della+Respira&family=Raleway&display=swap');
 /* font-family: 'Galindo', cursive;
 font-family: 'Londrina Shadow', cursive;
 font-family: 'Nova Round', cursive; 
@@ -8,6 +9,8 @@ font-family: 'Londrina Solid', cursive;
 body {
   /* background-repeat: repeat-y; */
   font-family: 'Londrina Solid', cursive;
+  /* font-family: 'Della Respira', serif;
+  font-family: 'Raleway', sans-serif; */
   letter-spacing: 1px;
   overflow-x: hidden;
 }
