@@ -264,6 +264,22 @@
                             App Features
                         </h4>
                         <div class="text-slate-700 text-sm md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">
+                            <li class="mx-3 mt-8 mb-4 md:mb-6 xl:mb-10">
+                                <span
+                                    class="underline decoration-double underline-offset-8 decoration-pink-400">Navigation
+                                    with FlatList
+                                </span>
+                                <p
+                                    class="my-4 px-4 border-l-4 border-orange-100 leading-6 md:leading-8 xl:leading-10 2xl:leading-loose">
+                                    # Presents a list of cities with corresponding weather icons, allowing users to
+                                    quickly assess the weather at multiple locations.<br>
+                                    # Enables users to select a specific city from the list to view detailed weather
+                                    information.
+                                </p>
+                                <div class="bg-orange-100 p-2 md:p-5 rounded-lg flex justify-center">
+                                    <img class="rounded-lg" src="img/weather/navigation.png" alt="navigation">
+                                </div>
+                            </li>
                             <li class="mx-3 my-4 md:my-6 xl:mb-10">
                                 <span
                                     class="underline decoration-double underline-offset-8 decoration-pink-400">Real-time</span>
@@ -273,8 +289,28 @@
                                     # Provides up-to-date weather data for the selected location.<br>
                                     # Retrieves and displays real-time weather information using the OpenWeatherMap API.
                                 </p>
-                                <div class="bg-orange-100 p-2 md:p-5 rounded-lg flex justify-center">
-                                    <img class="rounded-lg" src="" alt="weather_api">
+                                <div class="bg-orange-100 p-2 md:p-5 rounded-lg">
+                                    <div class="flex flex-col md:flex-row justify-center m-auto pb-2">
+                                        <img class="rounded-lg w-4/5 m-auto md:mx-0 md:w-2/5 xl:w-2/6 h-full"
+                                            src="img/weather/postman.png" alt="weather_api">
+                                        <p class="flex m-auto md:mx-4 xl:mx-10 py-2 text-center">
+                                            <span class="md:hidden">⬇️</span>
+                                            <span class="hidden md:flex">➡️</span>
+                                        </p>
+                                        <div class="mx-5 my-auto md:mx-0 md:w-3/5">
+                                            <p class="codepen" data-height="300" data-default-tab="js"
+                                                data-slug-hash="jOdppKb" data-preview="true" data-user="Selene-Choi"
+                                                style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                                <span>See the Pen <a href="https://codepen.io/Selene-Choi/pen/jOdppKb">
+                                                        weather app fetch OpenWeather API</a> by Selene Choi (<a
+                                                        href="https://codepen.io/Selene-Choi">@Selene-Choi</a>)
+                                                    on <a href="https://codepen.io">CodePen</a>.</span>
+                                            </p>
+                                        </div>
+                                        <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+                                    </div>
+                                    <p class="italic text-center">Utilize Postman to retrieve dynamic weather data</p>
                                 </div>
                             </li>
                             <li class="mx-3 my-4 md:mb-6 xl:mb-10">
@@ -288,35 +324,39 @@
                                     # Enhances the user interface by reflecting the weather atmosphere through changing
                                     background colors.
                                 </p>
-                                <div class="bg-orange-100 p-2 md:p-5 rounded-lg flex justify-center">
-                                    <img class="rounded-lg" src="" alt="weather_bg_icon">
-                                </div>
-                            </li>
-                            <li class="mx-3 my-4 md:mb-6 xl:mb-10">
-                                <span class="underline decoration-double underline-offset-8 decoration-pink-400">City
-                                    List</span> with Weather Icons
-                                <p
-                                    class="my-4 px-4 border-l-4 border-orange-100 leading-6 md:leading-8 xl:leading-10 2xl:leading-loose">
-                                    # Presents a list of cities with corresponding weather icons, allowing users to
-                                    quickly assess the weather at multiple locations.<br>
-                                    # Enables users to select a specific city from the list to view detailed weather
-                                    information.
-                                </p>
-                                <div class="bg-orange-100 p-2 md:p-5 rounded-lg flex justify-center">
-                                    <img class="rounded-lg" src="" alt="weather_list">
-                                </div>
-                            </li>
-                            <li class="mx-3 my-4 md:mb-6 xl:mb-10">
-                                <span
-                                    class="underline decoration-double underline-offset-8 decoration-pink-400">Asynchronous
-                                    Data</span> Fetching
-                                <p
-                                    class="my-4 px-4 border-l-4 border-orange-100 leading-6 md:leading-8 xl:leading-10 2xl:leading-loose">
-                                    # Uses the Axios library for asynchronous data fetching<br>
-                                    # Ensures smooth and efficient retrieval of weather data
-                                </p>
-                                <div class="bg-orange-100 p-2 md:p-5 rounded-lg flex justify-center">
-                                    <img class="rounded-lg" src="" alt="weather_axios">
+                                <div class="bg-orange-100 p-2 md:p-5 rounded-lg flex flex-col justify-center">
+                                    <!-- use custom design for dynamic data -->
+                                    <p class="my-4">1. Custom Design for Dynamic Data Matching</p>
+                                    <iframe height="300" style="width: 100%;" scrolling="no" title="Untitled"
+                                        src="https://codepen.io/Selene-Choi/embed/KKJBxwN?default-tab=js"
+                                        frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                                        See the Pen <a href="https://codepen.io/Selene-Choi/pen/KKJBxwN">
+                                            Untitled</a> by Selene Choi (<a
+                                            href="https://codepen.io/Selene-Choi">@Selene-Choi</a>)
+                                        on <a href="https://codepen.io">CodePen</a>.
+                                    </iframe>
+                                    <!-- switch function codepen -->
+                                    <p class="mt-8 mb-4">2. Switch Function for Handling Multiple Data Cases</p>
+                                    <iframe height="300" style="width: 100%;" scrolling="no"
+                                        title="function getProperBg"
+                                        src="https://codepen.io/Selene-Choi/embed/jOdpvNM?default-tab=js"
+                                        frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                                        See the Pen <a href="https://codepen.io/Selene-Choi/pen/jOdpvNM">
+                                            function getProperBg</a> by Selene Choi (<a
+                                            href="https://codepen.io/Selene-Choi">@Selene-Choi</a>)
+                                        on <a href="https://codepen.io">CodePen</a>.
+                                    </iframe>
+                                    <div class="flex flex-col md:flex-row mt-8 mb-4">
+                                        <div class="w-4/4 md:w-5/12 mb-8 md:m-auto">
+                                            <img class="rounded-lg" src="img/weather/DayNight.png" alt="DayNight">
+                                            <p class="mt-2 text-center">Day vs Night</p>
+                                        </div>
+                                        <div class="w-4/4 md:w-5/12 m-auto">
+                                            <img class="rounded-lg" src="img/weather/ClearCloudRain.png"
+                                                alt="ClearCloudRain">
+                                            <p class="mt-2 text-center">Clear vs Cloud vs Rain</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </li>
 
